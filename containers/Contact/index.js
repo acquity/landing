@@ -1,15 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Link from 'next/link';
-import Box from '~/components/Box';
-import Text from '~/components/Text';
-import Heading from '~/components/Heading';
-import Button from '~/components/Button';
-import FeatureBlock from '~/components/FeatureBlock';
-import Input from '~/components/Input';
-import Container from '~/components/UI/Container';
+import React from "react";
+import PropTypes from "prop-types";
+import Fade from "react-reveal/Fade";
+import Link from "next/link";
+import Box from "~/components/Box";
+import Text from "~/components/Text";
+import Heading from "~/components/Heading";
+import Button from "~/components/Button";
+import FeatureBlock from "~/components/FeatureBlock";
+import Input from "~/components/Input";
+import Container from "~/components/UI/Container";
 
-import ContactFromWrapper, { SectionMainWrapper } from './contact.style';
+import ContactFromWrapper, { SectionMainWrapper } from "./contact.style";
 
 const ContactSection = ({
   sectionWrapper,
@@ -22,31 +23,32 @@ const ContactSection = ({
   note,
   title,
   description,
-  colornote,
+  colornote
 }) => {
   return (
-    <SectionMainWrapper>
+    <SectionMainWrapper id="contact">
       <Box {...sectionWrapper}>
-        <Container className="containerClass">
+        <Container>
           <Box {...secTitleWrapper}>
             <FeatureBlock
               title={<Heading {...title} />}
               description={<Text {...description} />}
             />
           </Box>
-          <Box {...row}>
-            <Box {...contactForm}>
-              <ContactFromWrapper>
-                <Input
-                  inputType="email"
-                  placeholder="Enter Your Email address"
-                  iconPosition="right"
-                  isMaterial={false}
-                  className="email_input"
-                />
-                <Button {...button} title="SEND MESSAGE" />
-              </ContactFromWrapper>
-              {/* <Box className="contactdes">
+          <Fade up>
+            <Box {...row}>
+              <Box {...contactForm}>
+                <ContactFromWrapper>
+                  <Input
+                    inputType="email"
+                    placeholder="Enter Your Email address"
+                    iconPosition="right"
+                    isMaterial={false}
+                    className="email_input"
+                  />
+                  <Button {...button} title="SEND MESSAGE" />
+                </ContactFromWrapper>
+                {/* <Box className="contactdes">
                 <Text
                   as="span"
                   {...note}
@@ -56,8 +58,9 @@ const ContactSection = ({
                   <a className="">Join us on Telegram. </a>
                 </Link>
               </Box> */}
+              </Box>
             </Box>
-          </Box>
+          </Fade>
         </Container>
       </Box>
     </SectionMainWrapper>
@@ -75,91 +78,91 @@ ContactSection.propTypes = {
   note: PropTypes.object,
   title: PropTypes.object,
   description: PropTypes.object,
-  colornote: PropTypes.object,
+  colornote: PropTypes.object
 };
 
 ContactSection.defaultProps = {
   sectionWrapper: {
-    id: 'contact_section',
-    as: 'section',
-    pt: ['8px', '80px', '80px', '80px'],
-    pb: ['0', '80px', '80px', '80px', '80px'],
+    id: "contact_section",
+    as: "section",
+    pt: ["8px", "80px", "80px", "80px"],
+    pb: ["0", "80px", "80px", "80px", "80px"]
   },
   secTitleWrapper: {
-    mb: ['40px', '40px', '40px'],
-    p: ['0 15px', 0, 0, 0, 0],
+    mb: ["40px", "40px", "40px"],
+    p: ["0 15px", 0, 0, 0, 0]
   },
   secText: {
-    as: 'span',
-    display: 'block',
-    textAlign: 'center',
+    as: "span",
+    display: "block",
+    textAlign: "center",
     fontSize: `${2}`,
-    letterSpacing: '0.15em',
+    letterSpacing: "0.15em",
     fontWeight: `${6}`,
-    color: 'primary',
-    mb: `${3}`,
+    color: "primary",
+    mb: `${3}`
   },
   secHeading: {
-    textAlign: 'center',
+    textAlign: "center",
     fontSize: [`${6}`, `${8}`],
-    fontWeight: '400',
-    color: 'headingColor',
-    letterSpacing: '-0.025em',
-    mb: `${0}`,
+    fontWeight: "400",
+    color: "headingColor",
+    letterSpacing: "-0.025em",
+    mb: `${0}`
   },
   row: {
     flexBox: true,
-    justifyContent: 'center',
+    justifyContent: "center"
   },
   contactForm: {
-    width: [1, 1, 1, 1 / 2],
+    width: [1, 1, 1, 1 / 2]
   },
   button: {
-    type: 'button',
+    type: "button",
     fontSize: `${2}`,
-    fontWeight: '600',
-    borderRadius: '4px',
-    pl: '22px',
-    pr: '22px',
-    colors: 'primaryWithBg',
-    height: `${4}`,
+    fontWeight: "600",
+    borderRadius: "4px",
+    pl: "22px",
+    pr: "22px",
+    colors: "primaryWithBg",
+    height: `${4}`
   },
   note: {
-    fontSize: '16px',
-    fontWeight: '400',
-    color: '#525f7f',
-    lineHeight: '28px',
-    mb: ['25px', '25px', '30px', '30px', '45px'],
-    textAlign: ['center', 'center'],
+    fontSize: "16px",
+    fontWeight: "400",
+    color: "#525f7f",
+    lineHeight: "28px",
+    mb: ["25px", "25px", "30px", "30px", "45px"],
+    textAlign: ["center", "center"]
   },
   colornote: {
-    fontSize: '16px',
-    fontWeight: '500',
-    color: 'rgb(106, 82, 253)',
-    lineHeight: '28px',
-    mb: ['25px', '25px', '30px', '30px', '45px'],
-    textAlign: ['center', 'center'],
+    fontSize: "16px",
+    fontWeight: "500",
+    color: "rgb(106, 82, 253)",
+    lineHeight: "28px",
+    mb: ["25px", "25px", "30px", "30px", "45px"],
+    textAlign: ["center", "center"]
   },
   title: {
-    content: 'Get The Latest PayBear Updates',
-    fontSize: ['20px', '26px', '30px', '36px', '40px'],
-    lineHeight: ['30px', '32px', '40px', '50px', '55px'],
-    fontWeight: '700',
-    color: '#32325d',
-    letterSpacing: '-0.010em',
-    mb: '20px',
-    textAlign: ['center', 'center'],
+    content: "Contact us",
+    fontSize: ["24px", "26px", "30px", "36px", "40px"],
+    lineHeight: ["30px", "32px", "40px", "50px", "55px"],
+    fontWeight: "700",
+    color: "#32325d",
+    letterSpacing: "-0.010em",
+    mb: "20px",
+    textAlign: ["center", "center"]
   },
 
   description: {
-    content: 'And be the first to know when our crowdsale launches!.',
-    fontSize: '16px',
-    fontWeight: '400',
-    color: '#525f7f',
-    lineHeight: '28px',
-    mb: ['25px', '25px', '30px', '30px', '45px'],
-    textAlign: ['center', 'center'],
-  },
+    content: "Let us know how we can help you!",
+    fontSize: "16px",
+    fontWeight: "400",
+    color: "#525f7f",
+    lineHeight: "28px",
+    mb: ["25px", "25px", "30px", "30px", "45px"],
+    textAlign: ["center", "center"]
+  }
 };
 
 export default ContactSection;

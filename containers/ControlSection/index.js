@@ -169,7 +169,7 @@ ControlSection.defaultProps = {
     fontWeight: '500',
   },
   readMoreTitle: {
-    content: 'Current round closes in:',
+    content: 'Round is currently open.',
     as: 'span',
     fontSize: ['18px', '18px', '20px', '20px', '20px'],
     lineHeight: ['25px', '27px', '27px', '27px', '27px'],

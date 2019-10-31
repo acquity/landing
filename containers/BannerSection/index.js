@@ -8,9 +8,9 @@ import Image from '~/components/Image';
 import FeatureBlock from '~/components/FeatureBlock';
 import Container from '~/components/UI/Container';
 import Particles from '../Particle';
-import { Icon } from 'react-icons-kit';
-import { socialTwitter } from 'react-icons-kit/ionicons/socialTwitter';
-import { facebook2 } from 'react-icons-kit/icomoon/facebook2';
+// import { Icon } from 'react-icons-kit';
+// import { socialTwitter } from 'react-icons-kit/ionicons/socialTwitter';
+// import { facebook2 } from 'react-icons-kit/icomoon/facebook2';
 import BannerBG from '~/assets/image/crypto/white_bg1.svg';
 import BannerWrapper, { BgImageWrapper } from './bannerSection.style';
 
@@ -35,26 +35,26 @@ const BannerSection = ({
       /> */}
     </Fragment>
   );
-  const ShareButtonGroup = () => (
-    <Fragment>
-      <Button
-        title="Share on Twitter"
-        variant="textButton"
-        iconPosition="left"
-        icon={<Icon icon={socialTwitter} />}
-        {...outlineBtnStyle}
-        className="btnWithoutColor"
-      />
-      <Button
-        title="Share on Facebook"
-        variant="textButton"
-        iconPosition="left"
-        icon={<Icon icon={facebook2} />}
-        {...outlineBtnStyle}
-        className="btnWithoutColor"
-      />
-    </Fragment>
-  );
+  // const ShareButtonGroup = () => (
+  //   <Fragment>
+  //     <Button
+  //       title="Share on Twitter"
+  //       variant="textButton"
+  //       iconPosition="left"
+  //       icon={<Icon icon={socialTwitter} />}
+  //       {...outlineBtnStyle}
+  //       className="btnWithoutColor"
+  //     />
+  //     <Button
+  //       title="Share on Facebook"
+  //       variant="textButton"
+  //       iconPosition="left"
+  //       icon={<Icon icon={facebook2} />}
+  //       {...outlineBtnStyle}
+  //       className="btnWithoutColor"
+  //     />
+  //   </Fragment>
+  // );
   return (
     <BannerWrapper id="banner_section">
       <Particles />

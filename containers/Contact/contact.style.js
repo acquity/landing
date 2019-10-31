@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const ContactFromWrapper = styled.div`
   display: flex;
@@ -9,9 +9,6 @@ const ContactFromWrapper = styled.div`
   margin-right: auto;
   margin-bottom: 25px;
   position: relative;
-  @media (max-width: 990px) {
-    padding: 0 20px;
-  }
   @media (max-width: 575px) {
     flex-direction: column;
     align-items: center;
@@ -92,30 +89,17 @@ const ContactFromWrapper = styled.div`
   }
 `;
 const SectionMainWrapper = styled.div`
-  margin-top: -450px;
-  z-index: 1;
-  position: relative;
+  padding: 60px 0;
+  @media (max-width: 1440px) {
+    padding: 0;
+  }
   @media (max-width: 768px) {
-    padding-left: 30px;
-    padding-right: 30px;
+    margin-top: 100px;
   }
   @media (max-width: 480px) {
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-top: 50px;
   }
-  .containerClass {
-    border-radius: 20px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 94px 6px rgba(107, 83, 254, 0.1);
-    padding: 80px 0;
-
-    .contactdes {
-      text-align: center;
-      @media (max-width: 990px) {
-        padding: 0 20px;
-      }
-    }
-  }
+  
 `;
 export { SectionMainWrapper };
 
