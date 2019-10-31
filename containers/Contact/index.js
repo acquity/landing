@@ -46,7 +46,7 @@ const ContactSection = ({
                 />
                 <Button {...button} title="SEND MESSAGE" />
               </ContactFromWrapper>
-              <Box className="contactdes">
+              {/* <Box className="contactdes">
                 <Text
                   as="span"
                   {...note}
@@ -55,7 +55,7 @@ const ContactSection = ({
                 <Link href="#">
                   <a className="">Join us on Telegram. </a>
                 </Link>
-              </Box>
+              </Box> */}
             </Box>
           </Box>
         </Container>

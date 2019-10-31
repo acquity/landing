@@ -152,18 +152,18 @@ export const SCALABLE_FEATURE = [
 export const BETA_FEATURE = [
   {
     image: BETA1,
-    title: 'SEPA Transfers',
-    des: 'Deposit & Withdraw money.',
+    title: 'Effortless',
+    des: 'Get started in less than 5 clicks.',
   },
   {
     image: BETA2,
-    title: '24/7 Support',
-    des: 'Always here for you.',
+    title: 'Fast',
+    des: 'Get matched within the week.',
   },
   {
     image: BETA3,
     title: 'Secure',
-    des: 'Your money is safe.',
+    des: 'Your information is in safe hands.',
   },
 ];
 

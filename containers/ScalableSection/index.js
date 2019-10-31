@@ -121,7 +121,7 @@ ScalableHistory.defaultProps = {
   // Scalable section description default style
   description: {
     content:
-      "For every company that uses our system, a team of former employees from that company will volunteer to oversee the rounds and ensure that everything runs smoothly. They do this not for profit, but to enhance everyone's experience and prevent any fraudulent activity.",
+      "For every company that uses our system, a team of former employees from that company will oversee the rounds and ensure that everything runs smoothly. They do this not for profit, but to improve everyone's experience and prevent any fraudulent activity.",
     fontSize: "16px",
     fontWeight: "400",
     color: "#525f7f",

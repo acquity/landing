@@ -75,7 +75,7 @@ BetaSection.defaultProps = {
   },
 
   title: {
-    content: 'Be the first to use our Beta!',
+    content: 'Join us now!',
     fontSize: ['24px', '26px', '30px', '36px', '40px'],
     lineHeight: ['30px', '32px', '40px', '50px', '55px'],
     fontWeight: '700',
@@ -86,7 +86,7 @@ BetaSection.defaultProps = {
   },
 
   description: {
-    content: 'Become part of our ever growing community.',
+    content: 'Get the trade you deserve.',
     fontSize: '16px',
     fontWeight: '400',
     color: '#525f7f',

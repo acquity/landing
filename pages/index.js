@@ -15,6 +15,7 @@ import TrustedProofSections from '~/containers/TrustedProof';
 import ScalableSections from '~/containers/ScalableSection';
 import SlideSections from '~/containers/SlideSection';
 import BetaSections from '~/containers/BetaSection';
+import ContactSections from '~/containers/Contact';
 import Footer from '~/containers/Footer';
 
 export default () => {
@@ -46,7 +47,8 @@ export default () => {
           <ControlSections />
           <TrustedProofSections />
           <ScalableSections />
-          <SlideSections />
+          {/* <SlideSections />  */}
+          <ContactSections />
           <BetaSections />
           <Footer />
         </ContentWrapper>
