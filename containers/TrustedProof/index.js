@@ -34,7 +34,7 @@ const TrustedHistory = ({
               title={<Heading {...title} />}
               description={<Text {...description} />}
             />
-            <Fade up>
+            {/* <Fade up>
               <div className="TrustedImageBtn">
                 <Link href="#1">
                   <a>
@@ -55,7 +55,7 @@ const TrustedHistory = ({
                   </a>
                 </Link>
               </div>
-            </Fade>
+            </Fade> */}
           </Box>
           <Box className="colright" {...col} {...cardArea}>
             <FeatureSection>
@@ -68,7 +68,6 @@ const TrustedHistory = ({
                       content={item.title}
                       {...featureTitleStyle}
                     />
-
                     <Text content={item.des} {...featureDescriptionStyle} />
                   </Box>
                 </div>
@@ -112,7 +111,7 @@ TrustedHistory.defaultProps = {
 
   // Trusted section title default style
   title: {
-    content: 'A Trusted Proof of Investment Vehicle',
+    content: 'Guiding principles of our system and algorithm',
     fontSize: ['24px', '26px', '30px', '36px', '40px'],
     lineHeight: ['30px', '32px', '40px', '50px', '55px'],
     fontWeight: '700',
@@ -125,7 +124,7 @@ TrustedHistory.defaultProps = {
   // Trusted section description default style
   description: {
     content:
-      'Easily buy, sell or exchange over 30 different cryptocurrencies. Now euro deposits and withdrawn available.',
+      'We do our best to make the experience as fair as possible for everyone. To achieve that, these are the key principles that guide our decisions.',
     fontSize: '16px',
     fontWeight: '400',
     color: '#525f7f',
@@ -135,7 +134,7 @@ TrustedHistory.defaultProps = {
     maxWidth: ['100%', '100%', '100%', '100%', '430px'],
   },
   sectionSubTitle: {
-    content: 'Fast, Cheap, Zero Fraud',
+    content: 'The best experience possible',
     as: 'span',
     textAlign: 'left',
     fontSize: ['16px', '16px', '18px', '20px', '20px'],

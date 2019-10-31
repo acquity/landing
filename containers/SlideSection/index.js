@@ -34,7 +34,7 @@ const images = [
 
 const FeatureSlider = ({ row, title, description, sectionSubTitle }) => {
   return (
-    <FeatureSliderWrapper id="featureslider">
+    <FeatureSliderWrapper id="contact">
       <Container noGutter mobileGutter>
         <Box className="row" {...row}>
           <Text {...sectionSubTitle} />

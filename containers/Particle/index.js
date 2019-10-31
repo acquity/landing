@@ -17,7 +17,7 @@ const ParticlesComponent = () => {
         params={{
           particles: {
             number: {
-              value: 7,
+              value: 0,
               density: { enable: true, value_area: 800 },
             },
 

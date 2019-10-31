@@ -24,19 +24,19 @@ export const MENU_ITEMS = [
     offset: '0',
   },
   {
-    label: 'Feature',
-    path: '#trusted',
+    label: 'How It Works',
+    path: '#about',
     offset: '-40',
   },
   {
-    label: 'Offers',
-    path: '#scalable',
+    label: 'Our Team',
+    path: '#team',
     offset: '40',
   },
 
   {
-    label: 'Payment Proofs',
-    path: '#featureslider',
+    label: 'Contact Us',
+    path: '#contact',
     offset: '0',
   },
 ];
@@ -44,108 +44,108 @@ export const MENU_ITEMS = [
 export const TESTIMONIALS = [
   {
     review:
-      'Best working experience  with this amazing team & in future, we want to work together',
-    name: 'Denny Hilguston',
-    designation: 'CEO of Dell Co.',
+      'Acquity provides a seamless trading experience. I have stopped worrying about finding suitable traders.',
+    name: 'Wei Zhu',
+    designation: 'Former CTO at Grab',
     avatar: `${AuthorOne}`,
   },
   {
     review:
-      'Impressed with master class support of the team and really look forward for the future.',
-    name: 'Justin Albuz',
-    designation: 'Co Founder of IBM',
+      'I enjoyed using this system and managed to acquire a few shares myself effortlessly.',
+    name: 'Ben Leong',
+    designation: 'Professor at National University of Singapore',
     avatar: `${AuthorTwo}`,
   },
   {
     review:
-      'I have bought more than 10 themes on ThemeForest, and this is the first one I review.',
-    name: 'Milly Cristiana',
-    designation: 'Manager of Hp co.',
+      'Acquity gives me everything I want - a way to find buyers without any worries.',
+    name: 'Arul Kumaravel',
+    designation: 'Former Head of Engineering at Grab',
     avatar: `${AuthorThree}`,
   },
-  {
-    review:
-      'Impressed with master class support of the team and really look forward for the future.',
-    name: 'Milly Cristiana',
-    designation: 'Manager of Hp co.',
-    avatar: `${AuthorFour}`,
-  },
+  // {
+  //   review:
+  //     'Impressed with master class support of the team and really look forward for the future.',
+  //   name: 'Milly Cristiana',
+  //   designation: 'Manager of Hp co.',
+  //   avatar: `${AuthorFour}`,
+  // },
 ];
 export const TRANSACTIONS_FEATURE = [
   {
     image: FEATURE1,
-    title: 'Create Payment Address',
-    des: 'Provide your payout wallet address and callback URL to PayBear API.',
+    title: 'Create Account.',
+    des: 'Get started on your journey with Acquity in one click using LinkedIn login.',
   },
   {
     image: FEATURE2,
-    title: 'Ask for Payment',
-    des: 'Show your customer the wallet address as well as the payment amount.',
+    title: 'Submit Bid or Ask.',
+    des: "Indicate your interest to buy or sell in Acquity's weekly rounds.",
   },
   {
     image: FEATURE3,
-    title: 'Get Paid',
-    des: 'Payment is sent to the payout wallet immediately.',
+    title: 'Get Chatting.',
+    des: 'Get matched with an interested trader and discuss prices via our chat system.',
   },
   {
     image: FEATURE4,
-    title: 'Get Payment Notification.',
+    title: 'Trade Successfully.',
     des:
-      'Callbacks are sent to the URL you specified. You can process customer order',
+      'Take the exchange offline and submit your transaction request to the company for approval.',
   },
 ];
 export const PROOFS_FEATURE = [
   {
     image: PROOF1,
-    title: 'Instant trading',
-    des: 'Never miss a price swing.',
+    title: 'Round-based',
+    des: 'More time is allowed to ensure volume and successful matches.',
   },
   {
     image: PROOF2,
-    title: 'No hidden fees',
-    des: 'know our fees upfront.',
+    title: 'Non-profit',
+    des: 'We aim to enhance your trading experience. Our service is absolutely free.',
   },
   {
     image: PROOF3,
-    title: 'Secure storage',
-    des: 'Sleep with peace of mind.',
+    title: 'At least one buyer',
+    des: 'Our system ensures that every seller matches with at least one buyer.',
   },
   {
     image: PROOF4,
-    title: 'Systematic trading',
-    des: 'History intraday market.',
+    title: 'Price matters',
+    des: 'The better your price, the better you will fare with our algorithm.',
   },
   {
     image: PROOF5,
-    title: 'Network Effect',
-    des: 'Casinos contribute 1%.',
+    title: 'Transparency',
+    des: 'Our system provides users with data to make informed decisions.',
   },
   {
     image: PROOF6,
-    title: 'Bigger Rewards',
-    des: 'Players are incentivized.',
+    title: 'Up-to-date',
+    des: 'We keep users informed of any changes in the market or to their matches.',
   },
 ];
 export const SCALABLE_FEATURE = [
   {
     image: JACKPOTIMG,
-    title: 'Daily Jackpot',
-    des: '35000 CLV',
+    title: 'Name 1',
+    des: 'Description 1 + LinkedIn Link 1',
   },
   {
     image: JACKPOTIMG,
-    title: 'Weekly Jackpot',
-    des: '250000 CLV',
+    title: 'Name 2',
+    des: 'Description 2 + LinkedIn Link 2',
   },
   {
     image: JACKPOTIMG,
-    title: 'Monthly Jackpot',
-    des: '4999697 CLV',
+    title: 'Name 3',
+    des: 'Description 3 + LinkedIn Link 3',
   },
   {
     image: JACKPOTIMG,
-    title: 'Yearly Jackpot',
-    des: '300245785000 CLV',
+    title: 'Name 4',
+    des: 'Description 4 + LinkedIn Link 4',
   },
 ];
 
@@ -174,28 +174,23 @@ export const menuWidget = [
     menuItems: [
       {
         id: 1,
-        url: '#',
-        text: 'Support Center',
+        url: '#about',
+        text: 'How It Works',
       },
       {
         id: 2,
-        url: '#',
-        text: 'Customer Support',
+        url: '#team',
+        text: 'Our Team',
       },
       {
         id: 3,
-        url: '#',
-        text: 'About Us',
+        url: '#contact',
+        text: 'Contact Us',
       },
       {
         id: 4,
         url: '#',
         text: 'Copyright',
-      },
-      {
-        id: 5,
-        url: '#',
-        text: 'Popular Campaign',
       },
     ],
   },
@@ -206,58 +201,28 @@ export const menuWidget = [
       {
         id: 1,
         url: '#',
-        text: 'Return Policy',
+        text: 'Privacy Policy',
       },
       {
         id: 2,
         url: '#',
-        text: 'Privacy Policy',
+        text: 'Terms & Conditions',
       },
       {
         id: 3,
         url: '#',
-        text: 'Terms & Conditions',
-      },
-      {
-        id: 4,
-        url: '#',
-        text: 'Site Map',
-      },
-      {
-        id: 5,
-        url: '#',
-        text: 'Store Hours',
+        text: 'Copyright',
       },
     ],
   },
   {
     id: 3,
-    title: 'My Account',
+    title: 'Get Started',
     menuItems: [
       {
         id: 1,
-        url: '#',
-        text: 'Press inquiries',
-      },
-      {
-        id: 2,
-        url: '#',
-        text: 'Social media directories',
-      },
-      {
-        id: 3,
-        url: '#',
-        text: 'Images & B-roll',
-      },
-      {
-        id: 4,
-        url: '#',
-        text: 'Permissions',
-      },
-      {
-        id: 5,
-        url: '#',
-        text: 'Speaker requests',
+        url: 'https://app.acquity.io',
+        text: 'Login Now',
       },
     ],
   },

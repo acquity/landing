@@ -23,21 +23,10 @@ const Footer = ({ row, col, colOne, colTwo, titleStyle }) => {
         <Box className="row mainRow" {...row}>
           <Box {...colOne}>
             <Heading
-              content="Download The App"
               {...titleStyle}
               className="appDownload"
             />
             <Box className="imageWrapper">
-              <Link href="#">
-                <a>
-                  <Image src={AppImage} alt="App Image" />
-                </a>
-              </Link>
-              <Link href="#">
-                <a>
-                  <Image src={PlaystoreImage} alt="PlaystoreImage Image" />
-                </a>
-              </Link>
             </Box>
           </Box>
           {/* End of footer logo column */}
@@ -61,7 +50,7 @@ const Footer = ({ row, col, colOne, colTwo, titleStyle }) => {
         </Box>
         <Box className="row copyRight" {...row}>
           <Text
-            content="Copyright 2018 @Crypto Corporation."
+            content="Copyright © 2019 Acquity."
             className="copyRightText"
           />
         </Box>

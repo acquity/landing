@@ -41,7 +41,7 @@ const TestimonialSection = ({
           <GlideCarousel
             options={carouselOptions}
             bullets={true}
-            numberOfBullets={4}
+            numberOfBullets={3}
             controls={false}
           >
             <>

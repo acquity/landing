@@ -50,7 +50,7 @@ const ControlSection = ({
   btnStyle,
   sectionSubTitle,
   cardArea,
-  readMoreTitle,
+    readMoreTitle,
 }) => {
   return (
     <ControlWrapper id="control">
@@ -71,14 +71,14 @@ const ControlSection = ({
             />
             <Box className="readMoreSection">
               <Text {...readMoreTitle} />
-              <Link href="#">
+              {/* <Link href="#">
                 <a className="readMore">Read More. </a>
-              </Link>
+              </Link> */}
             </Box>
             <Fade up>
               <Box className="countDownSection">
                 <Countdown
-                  date={Date.now() + 909999999}
+                  date={Date.now() + 309999999}
                   renderer={renderer}
                   completed={false}
                 />
@@ -86,13 +86,8 @@ const ControlSection = ({
             </Fade>
             <Box className="countDownButton">
               <Button
-                title="BUY TOKENS"
+                title="GET STARTED"
                 className="countDownMainButton"
-                {...btnStyle}
-              />
-              <Button
-                title="35% Bonus"
-                className="countDownDiscountButton"
                 {...btnStyle}
               />
             </Box>
@@ -134,7 +129,7 @@ ControlSection.defaultProps = {
 
   // Transactions section title default style
   title: {
-    content: 'Take control of your credit and identity.',
+    content: 'Take control of your identity in our round-based system',
     fontSize: ['24px', '26px', '30px', '36px', '40px'],
     lineHeight: ['30px', '32px', '40px', '50px', '55px'],
     fontWeight: '700',
@@ -157,7 +152,7 @@ ControlSection.defaultProps = {
     maxWidth: ['100%', '100%', '100%', '100%', '430px'],
   },
   sectionSubTitle: {
-    content: 'Effortless crypto for everyone.',
+    content: 'Effortless trading for everyone.',
     as: 'span',
     textAlign: 'left',
     fontSize: ['16px', '16px', '18px', '20px', '20px'],
@@ -174,7 +169,7 @@ ControlSection.defaultProps = {
     fontWeight: '500',
   },
   readMoreTitle: {
-    content: 'Sale currently on hold. ',
+    content: 'Current round closes in:',
     as: 'span',
     fontSize: ['18px', '18px', '20px', '20px', '20px'],
     lineHeight: ['25px', '27px', '27px', '27px', '27px'],

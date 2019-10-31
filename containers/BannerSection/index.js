@@ -27,12 +27,12 @@ const BannerSection = ({
   const ButtonGroup = () => (
     <Fragment>
       <Button title="Get Started" {...btnStyle} />
-      <Button
+      {/* <Button
         title="Download Whitepaper"
         variant="textButton"
         icon={<i className="flaticon-next" />}
         {...outlineBtnStyle}
-      />
+      /> */}
     </Fragment>
   );
   const ShareButtonGroup = () => (
@@ -67,19 +67,19 @@ const BannerSection = ({
             <FeatureBlock
               title={
                 <Heading
-                  content="Accounts Payable Automation 80% Faster Bill Pay and AP"
+                  content="Equity Trading has never been more effortless"
                   {...title}
                 />
               }
               description={
                 <Text
-                  content="Agencies around the world are moving to the digital agencies. So, It is high time to introduce your agency digitaly."
+                  content="Save the time spent finding someone reliable to trade with and spend it on actually trading. Get matched within a week with Acquity."
                   {...description}
                 />
               }
               button={<ButtonGroup />}
             />
-            <FeatureBlock button={<ShareButtonGroup />} />
+            {/* <FeatureBlock button={<ShareButtonGroup />} /> */}
           </Box>
         </Box>
       </Container>
