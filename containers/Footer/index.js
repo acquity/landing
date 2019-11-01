@@ -21,16 +21,8 @@ const Footer = ({ row, col, colOne, colTwo, titleStyle }) => {
       </BgImageWrapper>
       <Container noGutter mobileGutter width="1200px">
         <Box className="row mainRow" {...row}>
-          <Box {...colOne}>
-            <Heading
-              {...titleStyle}
-              className="appDownload"
-            />
-            <Box className="imageWrapper">
-            </Box>
-          </Box>
           {/* End of footer logo column */}
-          <Box {...colTwo}>
+          <Box {...colOne} className="footer-cols">
             {menuWidget.map(widget => (
               <Box className="col" {...col} key={widget.id}>
                 <Heading content={widget.title} {...titleStyle} />
@@ -80,8 +72,8 @@ Footer.defaultProps = {
   },
   // Footer col one style
   colOne: {
-    width: ['100%', '30%', '33%', '33%'],
-    mb: ['30px', 0],
+    width: ['100%', '20%', '20%', '20%'],
+    mb: ['0px', 0],
     pl: ['0px', 0],
     pr: ['0px', '0px', 0],
   },
@@ -93,9 +85,9 @@ Footer.defaultProps = {
   },
   // Footer col default style
   col: {
-    width: ['100%', 1 / 3, 1 / 3, 1 / 3],
+    width: ['auto', 1 / 3, 1 / 3, 1 / 3],
     pl: [0, '15px'],
-    pr: [0, '15px'],
+    pr: ['90px', '15px'],
     mb: ['30px', '30px'],
   },
   // widget title default style

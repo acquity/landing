@@ -12,21 +12,21 @@ const TransactionsWrapper = styled.section`
     border-radius: 6px;
     background-image: -moz-linear-gradient(
       29deg,
-      rgb(255, 148, 147) 0%,
-      rgb(255, 120, 162) 100%
+      rgb(38, 126, 208) 0%,
+      rgb(85, 96, 232) 100%
     );
     background-image: -webkit-linear-gradient(
       29deg,
-      rgb(255, 148, 147) 0%,
-      rgb(255, 120, 162) 100%
+      rgb(38, 126, 208) 0%,
+      rgb(85, 96, 232) 100%
     );
     background-image: -ms-linear-gradient(
       29deg,
-      rgb(255, 148, 147) 0%,
-      rgb(255, 120, 162) 100%
+      rgb(38, 126, 208) 0%,
+      rgb(85, 96, 232) 100%
     );
     &:hover {
-      box-shadow: -6.691px 7.431px 20px 0px rgba(255, 131, 157, 0.2);
+      box-shadow: -6.691px 7.431px 20px 0px rgba(38, 126, 208, 0.2);
     }
     > span {
       font-weight: 700;

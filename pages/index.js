@@ -14,7 +14,7 @@ import ControlSections from '~/containers/ControlSection';
 import TrustedProofSections from '~/containers/TrustedProof';
 import ScalableSections from '~/containers/ScalableSection';
 import SlideSections from '~/containers/SlideSection';
-import BetaSections from '~/containers/BetaSection';
+import JoinUsSections from '~/containers/JoinUsSection';
 import ContactSections from '~/containers/Contact';
 import Footer from '~/containers/Footer';
 
@@ -47,9 +47,9 @@ export default () => {
           <ControlSections />
           <TrustedProofSections />
           <ScalableSections />
-          {/* <SlideSections />  */}
-          <ContactSections />
-          <BetaSections />
+          <SlideSections /> 
+          <JoinUsSections />
+          {/* <ContactSections /> */}
           <Footer />
         </ContentWrapper>
       </Fragment>

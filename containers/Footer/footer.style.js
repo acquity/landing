@@ -136,7 +136,22 @@ const FooterWrapper = styled.section`
     }
   }
   .mainRow {
-    margin-top: 160px;
+    margin-top: 240px;
+    @media (max-width: 1220px){
+      margin-top: 160px;
+    }
+    @media (max-width: 1200px){
+      margin-top: 0px;
+    }
+
+    .footer-cols{
+      display: flex;
+      justify-content: flex-start;
+
+      @media (max-width: 768px){
+        flex-wrap: wrap;
+      }
+    }
   }
 `;
 
@@ -159,15 +174,16 @@ const ListItem = styled.li`
 export const BgImageWrapper = styled.div`
   position: absolute;
   left: 0;
-  width: 100%;
+  width: 105%;
   top: 0;
   @media (max-width: 1200px) {
     display: none;
   }
   img {
-    width: 100%;
+    width: 101%;
     height: auto;
     display: block;
+    margin-top: -1px;
   }
 `;
 
