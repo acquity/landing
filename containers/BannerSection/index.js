@@ -72,7 +72,7 @@ const BannerSection = ({
             <FeatureBlock
               title={
                 <Heading
-                  content="Equity trading has never been more effortless"
+                  content="Private equity trading has never been more effortless"
                   {...title}
                 />
               }
@@ -84,7 +84,6 @@ const BannerSection = ({
               }
               button={<ButtonGroup />}
             />
-            {/* <FeatureBlock button={<ShareButtonGroup />} /> */}
           </Box>
         </Box>
       </Container>

@@ -49,8 +49,8 @@ const TeamSection = ({
                       />
 
                       <Text content={item.des} {...featureDescriptionStyle} />
-                      <Link href={item.linkedin} >
-                        <a style={{color: "rgb(38, 126, 208)"}}>
+                      <Link href={item.linkedin}>
+                        <a style={{ color: "rgb(38, 126, 208)" }}>
                           <Text content="LinkedIn" />
                         </a>
                       </Link>
@@ -81,15 +81,6 @@ const TeamSection = ({
           </Box>
         </Box>
         <br />
-        <Box className="row" {...row}>
-          {/* <Box className="colright" {...col} {...cardArea}>
-            <Image
-              src={ScalableImage}
-              className="ScalableImage"
-              alt="Scalable Section Image"
-            />
-          </Box> */}
-        </Box>
       </Container>
     </TeamWrapper>
   );
@@ -140,7 +131,7 @@ TeamSection.defaultProps = {
   // Scalable section description default style
   description: {
     content:
-      "For every company that uses our system, a team of former employees from that company will oversee the rounds and ensure that everything runs smoothly. They do this not for profit, but to improve everyone's experience and prevent any fraudulent activity.",
+      "For every company that uses our system, a team of current or former employees from that company will oversee the rounds and ensure that users onboard smoothly. They have no access to any information about the round, and they do this not for profit, but to improve everyone's experience and prevent any fraudulent activity.",
     fontSize: "16px",
     fontWeight: "400",
     color: "#525f7f",
@@ -187,7 +178,7 @@ TeamSection.defaultProps = {
   companiesSelect: {
     labelPosition: "top",
     labelText: "Select company to view:",
-    options: [{ value: "grab", label: "Grab" }],
+    options: [{ value: "grab", label: "Grab" }]
   }
 };
 

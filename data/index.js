@@ -45,24 +45,31 @@ export const MENU_ITEMS = [
 export const TESTIMONIALS = [
   {
     review:
-      'Acquity provides a seamless trading experience. I have stopped worrying about finding suitable traders.',
+      'Endorsed by',
     name: 'Wei Zhu',
     designation: 'Former CTO at Grab',
     avatar: `${AuthorOne}`,
   },
+  // {
+  //   review:
+  //     'Endorsed by',
+  //   name: 'Ben Leong',
+  //   designation: 'Professor at National University of Singapore',
+  //   avatar: `${AuthorTwo}`,
+  // },
   {
     review:
-      'I enjoyed using this system and managed to acquire a few shares myself effortlessly.',
-    name: 'Ben Leong',
-    designation: 'Professor at National University of Singapore',
-    avatar: `${AuthorTwo}`,
-  },
-  {
-    review:
-      'Acquity gives me everything I want - a way to find buyers without any worries.',
+      'Endorsed by',
     name: 'Arul Kumaravel',
     designation: 'Former VP of Engineering at Grab',
     avatar: `${AuthorThree}`,
+  },
+  {
+    review:
+      'Endorsed by',
+    name: 'Ke Liang',
+    designation: 'Former Head of Engineering at Grab',
+    avatar: `${TEAM3}`,
   },
   // {
   //   review:
@@ -186,13 +193,8 @@ export const menuWidget = [
       },
       {
         id: 3,
-        url: '#contact',
-        text: 'Contact Us',
-      },
-      {
-        id: 4,
-        url: '#',
-        text: 'Copyright',
+        url: '#product',
+        text: 'Product',
       },
     ],
   },
@@ -209,11 +211,6 @@ export const menuWidget = [
         id: 2,
         url: '#',
         text: 'Terms & Conditions',
-      },
-      {
-        id: 3,
-        url: '#',
-        text: 'Copyright',
       },
     ],
   },

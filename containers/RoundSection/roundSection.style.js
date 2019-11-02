@@ -75,6 +75,14 @@ const RoundWrapper = styled.section`
           }
         }
       }
+      .countPortion.inactive{
+        .countSingle{
+          color: #dddfe7;
+        }
+        .countText{
+          color: #dddfe7;
+        }
+      }
       @media (max-width: 480px) {
         display: none;
       }
