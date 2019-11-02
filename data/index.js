@@ -104,12 +104,12 @@ export const PRINCIPLES = [
   {
     image: PROOF2,
     title: 'Non-profit',
-    des: 'We aim to enhance your trading experience. Our service is absolutely free.',
+    des: 'Our open-source service aims to enhance your trading, free of charge.',
   },
   {
     image: PROOF3,
     title: 'At least one buyer',
-    des: 'Our system ensures that every seller matches with at least one buyer.',
+    des: 'Our system does our best to match every seller with at least one buyer.',
   },
   {
     image: PROOF4,
@@ -118,8 +118,8 @@ export const PRINCIPLES = [
   },
   {
     image: PROOF5,
-    title: 'Transparency',
-    des: 'Our system provides users with data to make informed decisions.',
+    title: 'Privacy',
+    des: 'Your identity is protected until the transaction details are confirmed.',
   },
   {
     image: PROOF6,
@@ -131,7 +131,7 @@ export const TEAM_MEMBERS = [
   {
     image: TEAM1,
     title: 'Wei Zhu',
-    des: 'Former CTO of Grab',
+    des: 'Former CTO at Grab',
     company: 'grab',
     linkedin: "#",
   },

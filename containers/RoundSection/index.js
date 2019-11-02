@@ -12,7 +12,7 @@ import Button from "~/components/Button";
 import FeatureBlock from "~/components/FeatureBlock";
 import Container from "~/components/UI/Container";
 import { RoundWrapper } from "./roundSection.style";
-import ControlImage from "~/assets/image/crypto/control.jpg";
+import ControlImage from "~/assets/image/crypto/round.svg";
 
 const Completionist = () => (
   <span className="readMore">You are good to go!</span>

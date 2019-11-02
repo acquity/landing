@@ -26,8 +26,13 @@ const FeatureSliderWrapper = styled.section`
             border-radius: 40px;
           }
           .image-gallery-image {
+            display: flex;
+            justify-content: center;
+            @media (max-width:1219px){
+              display: inherit;
+            }
             img {
-              height: 600px;
+              height: auto;
               @media (max-width: 768px) {
                 height: auto;
               }

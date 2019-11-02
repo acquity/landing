@@ -90,7 +90,7 @@ JoinUsSection.defaultProps = {
   },
 
   title: {
-    content: "Join us now!",
+    content: "Join us now",
     fontSize: ["24px", "26px", "30px", "36px", "40px"],
     lineHeight: ["30px", "32px", "40px", "50px", "55px"],
     fontWeight: "700",

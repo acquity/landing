@@ -112,7 +112,7 @@ const FooterWrapper = styled.section`
     }
     .copyRightText {
       font-size: 16px;
-      font-family: 'Nexa Bold';
+      font-family: 'Nexa Light';
       font-weight: 400;
       color: #fff;
       @media (max-width: 480px) {

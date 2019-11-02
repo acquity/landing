@@ -8,9 +8,9 @@ import Heading from '~/components/Heading';
 import FeatureBlock from '~/components/FeatureBlock';
 import Container from '~/components/UI/Container';
 import { FeatureSliderWrapper } from './slide.style';
-import Image1 from '~/assets/image/crypto/slider-1.png';
-import Image2 from '~/assets/image/crypto/slider-2.png';
-import Image3 from '~/assets/image/crypto/slider-3.png';
+import Image1 from '~/assets/image/crypto/login.png';
+import Image2 from '~/assets/image/crypto/mainapp.png';
+// import Image3 from '~/assets/image/crypto/slider-3.png';
 const images = [
   {
     original: `${Image1}`,
@@ -18,18 +18,18 @@ const images = [
   {
     original: `${Image2}`,
   },
-  {
-    original: `${Image3}`,
-  },
-  {
-    original: `${Image2}`,
-  },
-  {
-    original: `${Image1}`,
-  },
-  {
-    original: `${Image3}`,
-  },
+  // {
+  //   original: `${Image3}`,
+  // },
+  // {
+  //   original: `${Image2}`,
+  // },
+  // {
+  //   original: `${Image1}`,
+  // },
+  // {
+  //   original: `${Image3}`,
+  // },
 ];
 
 const FeatureSlider = ({ row, title, description, sectionSubTitle }) => {
