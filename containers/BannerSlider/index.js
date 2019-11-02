@@ -113,7 +113,7 @@ TestimonialSection.defaultProps = {
     fontWeight: '400',
     color: 'rgb(82, 95, 127)',
     lineHeight: '1.74',
-    mb: ['30px', '30px', '30px', '30px', '40px'],
+    mb: ['5px', '30px', '30px', '30px', '40px'],
   },
   TestimonialMeta: {
     flexBox: true,
