@@ -68,7 +68,6 @@ const FeatureSection = styled.section`
       border-color: rgb(233, 227, 254);
       border-radius: 10px;
       background-color: rgb(243, 242, 250);
-      padding: 8px 10px;
     }
     .contextPortion {
       margin-left: 15px;

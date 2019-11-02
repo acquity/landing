@@ -1,7 +1,6 @@
-import AuthorOne from '~/assets/image/crypto/author-4.jpg';
-import AuthorTwo from '~/assets/image/crypto/author-2.jpg';
-import AuthorThree from '~/assets/image/crypto/author-3.jpg';
-import AuthorFour from '~/assets/image/crypto/author-1.jpg';
+import AuthorOne from '~/assets/image/crypto/author1.png';
+import AuthorTwo from '~/assets/image/crypto/author2.png';
+import AuthorThree from '~/assets/image/crypto/author3.png';
 import FEATURE1 from '~/assets/image/crypto/tf1.svg';
 import FEATURE2 from '~/assets/image/crypto/tf2.svg';
 import FEATURE3 from '~/assets/image/crypto/tf3.svg';
@@ -12,7 +11,9 @@ import PROOF3 from '~/assets/image/crypto/proof3.svg';
 import PROOF4 from '~/assets/image/crypto/proof4.svg';
 import PROOF5 from '~/assets/image/crypto/proof5.svg';
 import PROOF6 from '~/assets/image/crypto/proof6.svg';
-import JACKPOTIMG from '~/assets/image/crypto/jackpot.svg';
+import TEAM1 from '~/assets/image/crypto/testi1.png';
+import TEAM2 from '~/assets/image/crypto/testi2.png';
+import TEAM3 from '~/assets/image/crypto/testi3.png';
 import BETA1 from '~/assets/image/crypto/beta-1.svg';
 import BETA2 from '~/assets/image/crypto/beta-2.svg';
 import BETA3 from '~/assets/image/crypto/beta-3.svg';
@@ -128,21 +129,21 @@ export const PRINCIPLES = [
 ];
 export const TEAM_MEMBERS = [
   {
-    image: JACKPOTIMG,
+    image: TEAM1,
     title: 'Wei Zhu',
     des: 'Former CTO of Grab',
     company: 'grab',
     linkedin: "#",
   },
   {
-    image: JACKPOTIMG,
+    image: TEAM2,
     title: 'Arul Kumaravel',
     des: 'Former VP of Engineering at Grab',
     company: 'grab',
     linkedin: "#",
   },
   {
-    image: JACKPOTIMG,
+    image: TEAM3,
     title: 'Ke Liang',
     des: 'Former Head of Engineering at Grab',
     company: 'grab',

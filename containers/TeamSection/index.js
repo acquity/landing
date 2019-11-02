@@ -154,7 +154,7 @@ TeamSection.defaultProps = {
     as: "span",
     textAlign: "left",
     fontSize: ["16px", "16px", "18px", "20px", "20px"],
-    fontFamily: "Poppins",
+    fontFamily: "Nexa Bold",
     fontWeight: "600",
     lineHeight: "27px",
     color: "#525f7f",
@@ -172,7 +172,7 @@ TeamSection.defaultProps = {
     fontWeight: "500",
     color: "#32325d",
     letterSpacing: "-0.010em",
-    mb: "10px",
+    mb: 0,
     textAlign: ["left", "left"]
   },
   // Scalable section description default style
@@ -186,8 +186,8 @@ TeamSection.defaultProps = {
   },
   companiesSelect: {
     labelPosition: "top",
-    labelText: "Select company to view",
-    options: [{ value: "grab", label: "Grab" }]
+    labelText: "Select company to view:",
+    options: [{ value: "grab", label: "Grab" }],
   }
 };
 

@@ -11,6 +11,8 @@ import { PRINCIPLES } from "~/data";
 import { PrinciplesWrapper, FeatureSection } from "./principles.style";
 import AppButton from "~/assets/image/crypto/app.svg";
 import PlayButton from "~/assets/image/crypto/playstore.svg";
+import Link from "next/link";
+import Button from '~/components/Button';
 
 const PrinciplesSection = ({
   row,
@@ -33,18 +35,23 @@ const PrinciplesSection = ({
               title={<Heading {...title} />}
               description={<Text {...description} />}
             />
-            {/* <Fade up>
+            <Fade up>
               <div className="TrustedImageBtn">
                 <Link href="#1">
                   <a>
-                    <Image
+                    {/* <Image
                       src={AppButton}
                       className="app_image_area"
                       alt="App Image"
+                    /> */}
+                    <Button
+                      title="SEE THE DOCS"
+                      className="mainButton"
+                      {...btnStyle}
                     />
                   </a>
                 </Link>
-                <Link href="#1">
+                {/* <Link href="#1">
                   <a>
                     <Image
                       src={PlayButton}
@@ -52,24 +59,24 @@ const PrinciplesSection = ({
                       alt="GooglePlay Image"
                     />
                   </a>
-                </Link>
+                </Link> */}
               </div>
-            </Fade> */}
+            </Fade>
           </Box>
           <Box className="colright" {...col} {...cardArea}>
             <FeatureSection>
               {PRINCIPLES.map((item, index) => (
-                  <div key={`feature-${index}`} className="featureWrapper">
-                    <Image src={item.image} alt={item.title} />
-                    <Box className="contextPortion">
-                      <Heading
-                        as="h3"
-                        content={item.title}
-                        {...featureTitleStyle}
-                      />
-                      <Text content={item.des} {...featureDescriptionStyle} />
-                    </Box>
-                  </div>
+                <div key={`feature-${index}`} className="featureWrapper">
+                  <Image src={item.image} alt={item.title} />
+                  <Box className="contextPortion">
+                    <Heading
+                      as="h3"
+                      content={item.title}
+                      {...featureTitleStyle}
+                    />
+                    <Text content={item.des} {...featureDescriptionStyle} />
+                  </Box>
+                </div>
               ))}
             </FeatureSection>
           </Box>
@@ -137,7 +144,7 @@ PrinciplesSection.defaultProps = {
     as: "span",
     textAlign: "left",
     fontSize: ["16px", "16px", "18px", "20px", "20px"],
-    fontFamily: "Poppins",
+    fontFamily: "Nexa Bold",
     fontWeight: "600",
     lineHeight: "27px",
     color: "#525f7f",

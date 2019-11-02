@@ -85,7 +85,7 @@ const RoundSection = ({
               <Link href="https://app.acquity.io">
                 <a>
                   <Button
-                    title="GET STARTED"
+                    title="JOIN THE ROUND"
                     className="countDownMainButton"
                     {...btnStyle}
                   />
@@ -157,7 +157,7 @@ RoundSection.defaultProps = {
     as: "span",
     textAlign: "left",
     fontSize: ["16px", "16px", "18px", "20px", "20px"],
-    fontFamily: "Poppins",
+    fontFamily: "Nexa Bold",
     fontWeight: "600",
     lineHeight: "27px",
     color: "#525f7f",

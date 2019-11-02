@@ -38,7 +38,7 @@ const RoundWrapper = styled.section`
       .readMore {
         font-size: 20px;
         font-weight: 500;
-        font-family: 'Poppins';
+        font-family: 'Nexa Bold';
         @media (max-width: 480px) {
           font-size: 16px;
         }
@@ -49,7 +49,7 @@ const RoundWrapper = styled.section`
       .readMore {
         font-size: 20px;
         font-weight: 500;
-        font-family: 'Poppins';
+        font-family: 'Nexa Bold';
         color: #32325d;
         @media (max-width: 480px) {
           font-size: 16px;
@@ -63,14 +63,14 @@ const RoundWrapper = styled.section`
           margin-right: 50px;
           font-size: 30px;
           font-weight: 700;
-          font-family: 'Poppins';
+          font-family: 'Nexa Bold';
           color: #32325d;
           justify-content: center;
           align-items: center;
           .countText {
             font-size: 16px;
             font-weight: 400;
-            font-family: 'Poppins';
+            font-family: 'Nexa Bold';
             color: #525f7f;
           }
         }
