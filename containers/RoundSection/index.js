@@ -157,7 +157,7 @@ RoundSection.defaultProps = {
     as: "span",
     textAlign: "left",
     fontSize: ["16px", "16px", "18px", "20px", "20px"],
-    fontFamily: "Nexa Bold",
+    fontFamily: "'Nexa Bold','Poppins'",
     fontWeight: "600",
     lineHeight: "27px",
     color: "#525f7f",

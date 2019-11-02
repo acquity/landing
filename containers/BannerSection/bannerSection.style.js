@@ -98,7 +98,7 @@ const BannerWrapper = styled.section`
         padding-left: 15px;
         font-size: 15px;
         font-weight: 500 !important;
-        font-family: 'Nexa Bold', sans-serif;
+        font-family: 'Nexa Bold', 'Poppins', sans-serif;
       }
       &:hover {
         box-shadow: none !important;

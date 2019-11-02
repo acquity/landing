@@ -9,8 +9,8 @@ import Select from '~/components/Select';
 import Container from '~/components/UI/Container';
 import FooterWrapper, { List, ListItem, BgImageWrapper } from './footer.style';
 import { menuWidget, Language_NAMES } from '~/data';
-import AppImage from '~/assets/image/ride/footerapp.svg';
-import PlaystoreImage from '~/assets/image/ride/footerplay.svg';
+import AppImage from '~/assets/image/crypto/footerapp.svg';
+import PlaystoreImage from '~/assets/image/crypto/footerplay.svg';
 import FooterBG from '~/assets/image/crypto/footer-bg.svg';
 
 const Footer = ({ row, col, colOne, colTwo, titleStyle }) => {
@@ -97,7 +97,7 @@ Footer.defaultProps = {
     fontWeight: '600',
     lineHeight: '1.34',
     mb: ['15px', '18px', '18px', '20px', '30px'],
-    fontFamily: 'Nexa Bold',
+    fontFamily: 'Poppins'
   },
   // Default logo size
   logoStyle: {
@@ -110,7 +110,7 @@ Footer.defaultProps = {
     fontSize: '16px',
     mb: '12px',
     fontWeight: '600',
-    fontFamily: 'Nexa Light',
+    fontFamily: 'Poppins',
   },
 };
 
