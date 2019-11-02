@@ -9,9 +9,6 @@ import FeatureBlock from "~/components/FeatureBlock";
 import Container from "~/components/UI/Container";
 import { PRINCIPLES } from "~/data";
 import { PrinciplesWrapper, FeatureSection } from "./principles.style";
-import AppButton from "~/assets/image/crypto/app.svg";
-import PlayButton from "~/assets/image/crypto/playstore.svg";
-import Link from "next/link";
 import Button from '~/components/Button';
 
 const PrinciplesSection = ({
@@ -37,29 +34,13 @@ const PrinciplesSection = ({
             />
             <Fade up>
               <div className="TrustedImageBtn">
-                {/* <Link href="https://github.com/acquity/api"> */}
                   <a href="https://github.com/acquity/api" target="_blank">
-                    {/* <Image
-                      src={AppButton}
-                      className="app_image_area"
-                      alt="App Image"
-                    /> */}
                     <Button
                       title="SEE THE DOCS"
                       className="mainButton"
                       {...btnStyle}
                     />
                   </a>
-                {/* </Link> */}
-                {/* <Link href="#1">
-                  <a>
-                    <Image
-                      src={PlayButton}
-                      className="play_image_area"
-                      alt="GooglePlay Image"
-                    />
-                  </a>
-                </Link> */}
               </div>
             </Fade>
           </Box>

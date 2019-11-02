@@ -18,18 +18,6 @@ const images = [
   {
     original: `${Image2}`,
   },
-  // {
-  //   original: `${Image3}`,
-  // },
-  // {
-  //   original: `${Image2}`,
-  // },
-  // {
-  //   original: `${Image1}`,
-  // },
-  // {
-  //   original: `${Image3}`,
-  // },
 ];
 
 const FeatureSlider = ({ row, title, description, sectionSubTitle }) => {
