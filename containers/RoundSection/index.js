@@ -11,7 +11,7 @@ import Heading from "~/components/Heading";
 import Button from "~/components/Button";
 import FeatureBlock from "~/components/FeatureBlock";
 import Container from "~/components/UI/Container";
-import { ControlWrapper } from "./controlSection.style";
+import { RoundWrapper } from "./roundSection.style";
 import ControlImage from "~/assets/image/crypto/control.jpg";
 
 const Completionist = () => (
@@ -42,7 +42,7 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
     );
   }
 };
-const ControlSection = ({
+const RoundSection = ({
   row,
   col,
   title,
@@ -50,17 +50,17 @@ const ControlSection = ({
   btnStyle,
   sectionSubTitle,
   cardArea,
-  readMoreTitle
+  btnTitle
 }) => {
   return (
-    <ControlWrapper id="control">
+    <RoundWrapper id="control">
       <Container>
         <Box className="row" {...row}>
           <Box className="colleft" {...col} style={{ flexDirection: "column" }}>
             <Image
               src={ControlImage}
-              className="controlImage"
-              alt="Control Section Image"
+              className="roundImage"
+              alt="Round Section Image"
             />
           </Box>
           <Box className="colright" {...col} {...cardArea}>
@@ -69,11 +69,8 @@ const ControlSection = ({
               title={<Heading {...title} />}
               description={<Text {...description} />}
             />
-            <Box className="readMoreSection">
-              <Text {...readMoreTitle} />
-              {/* <Link href="#">
-                <a className="readMore">Read More. </a>
-              </Link> */}
+            <Box className="btnSection">
+              <Text {...btnTitle} />
             </Box>
             <Fade up>
               <Box className="countDownSection">
@@ -98,23 +95,23 @@ const ControlSection = ({
           </Box>
         </Box>
       </Container>
-    </ControlWrapper>
+    </RoundWrapper>
   );
 };
 
 // Transactions style props
-ControlSection.propTypes = {
+RoundSection.propTypes = {
   sectionHeader: PropTypes.object,
   sectionTitle: PropTypes.object,
   sectionSubTitle: PropTypes.object,
   row: PropTypes.object,
   col: PropTypes.object,
-  readMoreTitle: PropTypes.object,
+  btnTitle: PropTypes.object,
   btnStyle: PropTypes.object
 };
 
 // Transactions default style
-ControlSection.defaultProps = {
+RoundSection.defaultProps = {
   // Transactions section row default style
   row: {
     flexBox: true,
@@ -146,7 +143,7 @@ ControlSection.defaultProps = {
   // Transactions section description default style
   description: {
     content:
-      "Crumbs makes crypto investing effortless and automated, so now you would not miss the right time to buy. From the customer wallet to the marchent wallet in a few minute.",
+      "Acquity uses weekly rounds to collect anonymised bids and asks, before matching them with our algorithm. Simply join before the round ends and get notified when you match.",
     fontSize: "16px",
     fontWeight: "400",
     color: "#525f7f",
@@ -156,7 +153,7 @@ ControlSection.defaultProps = {
     maxWidth: ["100%", "100%", "100%", "100%", "430px"]
   },
   sectionSubTitle: {
-    content: "Effortless trading for everyone.",
+    content: "Effortless trading for everyone",
     as: "span",
     textAlign: "left",
     fontSize: ["16px", "16px", "18px", "20px", "20px"],
@@ -172,7 +169,7 @@ ControlSection.defaultProps = {
     fontSize: "14px",
     fontWeight: "500"
   },
-  readMoreTitle: {
+  btnTitle: {
     content: "Round is currently open.",
     as: "span",
     fontSize: ["18px", "18px", "20px", "20px", "20px"],
@@ -185,4 +182,4 @@ ControlSection.defaultProps = {
   }
 };
 
-export default ControlSection;
+export default RoundSection;

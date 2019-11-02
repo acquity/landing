@@ -72,7 +72,7 @@ const BannerSection = ({
             <FeatureBlock
               title={
                 <Heading
-                  content="Equity Trading has never been more effortless"
+                  content="Equity trading has never been more effortless"
                   {...title}
                 />
               }

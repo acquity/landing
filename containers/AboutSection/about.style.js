@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const TransactionsWrapper = styled.section`
+const AboutWrapper = styled.section`
   padding: 120px 0 80px;
   @media (max-width: 1440px) {
     padding: 80px 0 50px;
@@ -75,4 +75,4 @@ const FeatureSection = styled.section`
     }
   }
 `;
-export { TransactionsWrapper, FeatureSection };
+export { AboutWrapper, FeatureSection };

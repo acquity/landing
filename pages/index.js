@@ -9,10 +9,10 @@ import { DrawerProvider } from '~/contexts/DrawerContext';
 import Navbar from '~/containers/Navbar';
 import Banner from '~/containers/BannerSection';
 import BannerSlider from '~/containers/BannerSlider';
-import Transactions from '~/containers/Transaction';
-import ControlSections from '~/containers/ControlSection';
-import TrustedProofSections from '~/containers/TrustedProof';
-import ScalableSections from '~/containers/ScalableSection';
+import AboutSections from '~/containers/AboutSection';
+import RoundSections from '~/containers/RoundSection';
+import PrinciplesSections from '~/containers/PrinciplesSection';
+import TeamSections from '~/containers/TeamSection';
 import SlideSections from '~/containers/SlideSection';
 import JoinUsSections from '~/containers/JoinUsSection';
 import ContactSections from '~/containers/Contact';
@@ -43,10 +43,10 @@ export default () => {
           </Sticky>
           <Banner />
           <BannerSlider />
-          <Transactions />
-          <ControlSections />
-          <TrustedProofSections />
-          <ScalableSections />
+          <AboutSections />
+          <RoundSections />
+          <PrinciplesSections />
+          <TeamSections />
           <SlideSections /> 
           <JoinUsSections />
           {/* <ContactSections /> */}

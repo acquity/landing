@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const ControlWrapper = styled.section`
+const RoundWrapper = styled.section`
   padding: 60px 0;
   display: flex;
   justify-content: center;
@@ -34,7 +34,7 @@ const ControlWrapper = styled.section`
     @media (max-width: 480px) {
       margin-top: 50px;
     }
-    .readMoreSection {
+    .btnSection {
       .readMore {
         font-size: 20px;
         font-weight: 500;
@@ -123,4 +123,4 @@ const ControlWrapper = styled.section`
   }
 `;
 
-export { ControlWrapper };
+export { RoundWrapper };

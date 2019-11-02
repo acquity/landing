@@ -1,18 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Box from "~/components/Box";
 import Fade from "react-reveal/Fade";
+import Box from "~/components/Box";
 import Image from "~/components/Image";
 import Text from "~/components/Text";
 import Heading from "~/components/Heading";
-import Button from "~/components/Button";
 import FeatureBlock from "~/components/FeatureBlock";
 import Container from "~/components/UI/Container";
-import { TRANSACTIONS_FEATURE } from "~/data";
-import { TransactionsWrapper, FeatureSection } from "./transaction.style";
-import Link from "next/link";
+import { PRINCIPLES } from "~/data";
+import { PrinciplesWrapper, FeatureSection } from "./principles.style";
+import AppButton from "~/assets/image/crypto/app.svg";
+import PlayButton from "~/assets/image/crypto/playstore.svg";
 
-const TransactionsHistory = ({
+const PrinciplesSection = ({
   row,
   col,
   title,
@@ -24,48 +24,63 @@ const TransactionsHistory = ({
   featureDescriptionStyle
 }) => {
   return (
-    <TransactionsWrapper id="about">
-      <Container>
+    <PrinciplesWrapper id="principles">
+      <Container noGutter mobileGutter>
         <Box className="row" {...row}>
           <Box className="colleft" {...col} style={{ flexDirection: "column" }}>
             <Text {...sectionSubTitle} />
             <FeatureBlock
               title={<Heading {...title} />}
               description={<Text {...description} />}
-              button={
-                <Link href="https://app.acquity.io">
+            />
+            {/* <Fade up>
+              <div className="TrustedImageBtn">
+                <Link href="#1">
                   <a>
-                    <Button title="GET STARTED" {...btnStyle} />
+                    <Image
+                      src={AppButton}
+                      className="app_image_area"
+                      alt="App Image"
+                    />
                   </a>
                 </Link>
-              }
-            />
+                <Link href="#1">
+                  <a>
+                    <Image
+                      src={PlayButton}
+                      className="play_image_area"
+                      alt="GooglePlay Image"
+                    />
+                  </a>
+                </Link>
+              </div>
+            </Fade> */}
           </Box>
           <Box className="colright" {...col} {...cardArea}>
             <FeatureSection>
-              {TRANSACTIONS_FEATURE.map((item, index) => (
-                <Fade key={`feature-${index}`} up>
-                  <div className="featureWrapper">
+              {PRINCIPLES.map((item, index) => (
+                  <div key={`feature-${index}`} className="featureWrapper">
                     <Image src={item.image} alt={item.title} />
-                    <Heading
-                      as="h3"
-                      content={item.title}
-                      {...featureTitleStyle}
-                    />
-                    <Text content={item.des} {...featureDescriptionStyle} />
+                    <Box className="contextPortion">
+                      <Heading
+                        as="h3"
+                        content={item.title}
+                        {...featureTitleStyle}
+                      />
+                      <Text content={item.des} {...featureDescriptionStyle} />
+                    </Box>
                   </div>
-                </Fade>
               ))}
             </FeatureSection>
           </Box>
         </Box>
       </Container>
-    </TransactionsWrapper>
+    </PrinciplesWrapper>
   );
 };
 
 // Transactions style props
-TransactionsHistory.propTypes = {
+PrinciplesSection.propTypes = {
   sectionHeader: PropTypes.object,
   sectionTitle: PropTypes.object,
   sectionSubTitle: PropTypes.object,
@@ -75,16 +90,16 @@ TransactionsHistory.propTypes = {
   featureDescriptionStyle: PropTypes.object
 };
 
-// Transactions default style
-TransactionsHistory.defaultProps = {
-  // Transactions section row default style
+// Trusted default style
+PrinciplesSection.defaultProps = {
+  // Trusted section row default style
   row: {
     flexBox: true,
     flexWrap: "wrap",
     ml: "-15px",
     mr: "-15px"
   },
-  // Transactions section col default style
+  // Trusted section col default style
   col: {
     pr: "15px",
     pl: "15px",
@@ -93,9 +108,9 @@ TransactionsHistory.defaultProps = {
     alignSelf: "center"
   },
 
-  // Transactions section title default style
+  // Trusted section title default style
   title: {
-    content: "Our system is designed for the serious trader",
+    content: "Guiding principles of our system and algorithm",
     fontSize: ["24px", "26px", "30px", "36px", "40px"],
     lineHeight: ["30px", "32px", "40px", "50px", "55px"],
     fontWeight: "700",
@@ -105,20 +120,20 @@ TransactionsHistory.defaultProps = {
     maxWidth: ["100%", "100%", "100%", "100%", "415px"],
     textAlign: ["left", "left"]
   },
-  // Transactions section description default style
+  // Trusted section description default style
   description: {
     content:
-      "Acquity seeks to enhance your trading experience by finding you a match every round.",
+      "We do our best to make the experience as fair as possible for everyone. To achieve that, these are the key principles that guide our decisions.",
     fontSize: "16px",
     fontWeight: "400",
     color: "#525f7f",
     lineHeight: "28px",
-    mb: ["30px", "30px", "40px", "40px", "55px"],
+    mb: ["25px", "25px", "30px", "30px", "45px"],
     textAlign: ["left", "left"],
     maxWidth: ["100%", "100%", "100%", "100%", "430px"]
   },
   sectionSubTitle: {
-    content: "How Acquity works",
+    content: "How we ensure fairness",
     as: "span",
     textAlign: "left",
     fontSize: ["16px", "16px", "18px", "20px", "20px"],
@@ -136,14 +151,14 @@ TransactionsHistory.defaultProps = {
   },
   featureTitleStyle: {
     fontSize: ["18px", "18px", "20px", "20px", "20px"],
-    lineHeight: ["25px", "27px", "27px", "27px", "27px"],
+    lineHeight: ["1", "1", "1", "1", "1"],
     fontWeight: "500",
     color: "#32325d",
     letterSpacing: "-0.010em",
     mb: "10px",
     textAlign: ["left", "left"]
   },
-  // Transactions section description default style
+  // Trusted section description default style
   featureDescriptionStyle: {
     fontSize: "16px",
     fontWeight: "400",
@@ -153,4 +168,4 @@ TransactionsHistory.defaultProps = {
   }
 };
 
-export default TransactionsHistory;
+export default PrinciplesSection;

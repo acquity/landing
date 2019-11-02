@@ -34,7 +34,7 @@ const images = [
 
 const FeatureSlider = ({ row, title, description, sectionSubTitle }) => {
   return (
-    <FeatureSliderWrapper id="contact">
+    <FeatureSliderWrapper id="product">
       <Container noGutter mobileGutter>
         <Box className="row" {...row}>
           <Text {...sectionSubTitle} />
@@ -82,7 +82,7 @@ FeatureSlider.defaultProps = {
   },
 
   title: {
-    content: 'A Trusted Proof of Investment Vehicle',
+    content: 'A trusted matching platform for equity',
     fontSize: ['24px', '26px', '30px', '36px', '40px'],
     lineHeight: ['30px', '32px', '40px', '50px', '55px'],
     fontWeight: '700',
@@ -94,7 +94,7 @@ FeatureSlider.defaultProps = {
 
   description: {
     content:
-      'Easily buy, sell or exchange over 30 different cryptocurrencies. Now euro deposits and withdrawn available.',
+      'Find the trade you want within the week and start spending time on actually trading.',
     fontSize: '16px',
     fontWeight: '400',
     color: '#525f7f',
@@ -103,7 +103,7 @@ FeatureSlider.defaultProps = {
     textAlign: ['center', 'center'],
   },
   sectionSubTitle: {
-    content: 'Fast, Cheap, Zero Fraud',
+    content: 'Seamless experience from end-to-end',
     as: 'span',
     textAlign: 'left',
     fontSize: ['16px', '16px', '18px', '20px', '20px'],

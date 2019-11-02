@@ -35,8 +35,8 @@ export const MENU_ITEMS = [
   },
 
   {
-    label: 'Contact Us',
-    path: '#contact',
+    label: 'Product',
+    path: '#product',
     offset: '0',
   },
 ];
@@ -60,7 +60,7 @@ export const TESTIMONIALS = [
     review:
       'Acquity gives me everything I want - a way to find buyers without any worries.',
     name: 'Arul Kumaravel',
-    designation: 'Former Head of Engineering at Grab',
+    designation: 'Former VP of Engineering at Grab',
     avatar: `${AuthorThree}`,
   },
   // {
@@ -71,7 +71,7 @@ export const TESTIMONIALS = [
   //   avatar: `${AuthorFour}`,
   // },
 ];
-export const TRANSACTIONS_FEATURE = [
+export const ABOUT_FEATURES = [
   {
     image: FEATURE1,
     title: 'Create Account.',
@@ -94,11 +94,11 @@ export const TRANSACTIONS_FEATURE = [
       'Take the exchange offline and submit your transaction request to the company for approval.',
   },
 ];
-export const PROOFS_FEATURE = [
+export const PRINCIPLES = [
   {
     image: PROOF1,
     title: 'Round-based',
-    des: 'More time is allowed to ensure volume and successful matches.',
+    des: 'More time is allowed to ensure volume and success of matches.',
   },
   {
     image: PROOF2,
@@ -126,26 +126,27 @@ export const PROOFS_FEATURE = [
     des: 'We keep users informed of any changes in the market or to their matches.',
   },
 ];
-export const SCALABLE_FEATURE = [
+export const TEAM_MEMBERS = [
   {
     image: JACKPOTIMG,
-    title: 'Name 1',
-    des: 'Description 1 + LinkedIn Link 1',
+    title: 'Wei Zhu',
+    des: 'Former CTO of Grab',
+    company: 'grab',
+    linkedin: "#",
   },
   {
     image: JACKPOTIMG,
-    title: 'Name 2',
-    des: 'Description 2 + LinkedIn Link 2',
+    title: 'Arul Kumaravel',
+    des: 'Former VP of Engineering at Grab',
+    company: 'grab',
+    linkedin: "#",
   },
   {
     image: JACKPOTIMG,
-    title: 'Name 3',
-    des: 'Description 3 + LinkedIn Link 3',
-  },
-  {
-    image: JACKPOTIMG,
-    title: 'Name 4',
-    des: 'Description 4 + LinkedIn Link 4',
+    title: 'Ke Liang',
+    des: 'Former Head of Engineering at Grab',
+    company: 'grab',
+    linkedin: "#",
   },
 ];
 

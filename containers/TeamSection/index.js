@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Fade from "react-reveal/Fade";
 import Box from "~/components/Box";
@@ -7,12 +7,12 @@ import Text from "~/components/Text";
 import Heading from "~/components/Heading";
 import FeatureBlock from "~/components/FeatureBlock";
 import Container from "~/components/UI/Container";
-import Dropdown from "~/components/Dropdown";
-import { SCALABLE_FEATURE } from "~/data";
-import { ScalableWrapper, FeatureSection } from "./scalable.style";
-import ScalableImage from "~/assets/image/crypto/scalable.jpg";
+import Select from "~/components/Select";
+import { TEAM_MEMBERS } from "~/data";
+import { TeamWrapper, FeatureSection } from "./team.style";
+import Link from "next/link";
 
-const ScalableHistory = ({
+const TeamSection = ({
   row,
   col,
   title,
@@ -21,35 +21,26 @@ const ScalableHistory = ({
   sectionSubTitle,
   cardArea,
   featureTitleStyle,
-  featureDescriptionStyle
+  featureDescriptionStyle,
+  companiesSelect
 }) => {
+  const [selectedOption, handleChange] = useState({
+    value: "grab",
+    label: "Grab"
+  });
+
   return (
-    <ScalableWrapper id="team">
+    <TeamWrapper id="team">
       <Container noGutter mobileGutter>
         <Box className="row" {...row}>
-          <Box  {...col} style={{flexDirection:"column"}}>
-            <Text {...sectionSubTitle} />
-            <FeatureBlock
-              title={<Heading {...title} />}
-              description={<Text {...description} />}
-            />
-          </Box>
-          {/* <Box className="colright" {...col} style={{justifyContent: "flex-End"}}>
-            <Dropdown 
-              content="Grab"
-              dropdownItems={["Grab"]}
-              // dropdownDirection = "down"
-            ></Dropdown>
-          </Box> */}
-        </Box>
-        <br/>
-        <Box className="row" {...row}>
-          <Box {...col}>
+          <Box className="colleft" {...col}>
             <FeatureSection>
-              {SCALABLE_FEATURE.map((item, index) => (
+              {TEAM_MEMBERS.filter(
+                item => item.company === selectedOption.value
+              ).map((item, index) => (
                 <div key={`feature-${index}`} className="featureWrapper">
                   <Fade up>
-                    <Image src={item.image} alt={item.title}/>
+                    <Image src={item.image} alt={item.title} />
                     <Box className="contextPortion">
                       <Heading
                         as="h3"
@@ -58,12 +49,39 @@ const ScalableHistory = ({
                       />
 
                       <Text content={item.des} {...featureDescriptionStyle} />
+                      <Link href={item.linkedin} >
+                        <a style={{color: "rgb(38, 126, 208)"}}>
+                          <Text content="LinkedIn" />
+                        </a>
+                      </Link>
                     </Box>
                   </Fade>
                 </div>
               ))}
             </FeatureSection>
           </Box>
+
+          <Box
+            className="colright"
+            {...col}
+            style={{ flexDirection: "column" }}
+          >
+            <Text {...sectionSubTitle} />
+            <FeatureBlock
+              title={<Heading {...title} />}
+              description={<Text {...description} />}
+              additionalContent={
+                <Select
+                  {...companiesSelect}
+                  value={selectedOption}
+                  onChange={option => handleChange(option)}
+                />
+              }
+            />
+          </Box>
+        </Box>
+        <br />
+        <Box className="row" {...row}>
           {/* <Box className="colright" {...col} {...cardArea}>
             <Image
               src={ScalableImage}
@@ -73,27 +91,28 @@ const ScalableHistory = ({
           </Box> */}
         </Box>
       </Container>
-    </ScalableWrapper>
+    </TeamWrapper>
   );
 };
 
 // Transactions style props
-ScalableHistory.propTypes = {
+TeamSection.propTypes = {
   sectionHeader: PropTypes.object,
   sectionTitle: PropTypes.object,
   sectionSubTitle: PropTypes.object,
   row: PropTypes.object,
   col: PropTypes.object,
   featureTitleStyle: PropTypes.object,
-  featureDescriptionStyle: PropTypes.object
+  featureDescriptionStyle: PropTypes.object,
+  companies: PropTypes.object
 };
 
 // Scalable default style
-ScalableHistory.defaultProps = {
+TeamSection.defaultProps = {
   // Scalable section row default style
   row: {
     flexBox: true,
-    flexWrap: "wrap",
+    flexWrap: "wrap-reverse",
     ml: "-15px",
     mr: "-15px"
   },
@@ -131,7 +150,7 @@ ScalableHistory.defaultProps = {
     maxWidth: ["100%", "100%", "100%", "100%", "430px"]
   },
   sectionSubTitle: {
-    content: "Seamless experience from end to end",
+    content: "Worry-free interaction between traders",
     as: "span",
     textAlign: "left",
     fontSize: ["16px", "16px", "18px", "20px", "20px"],
@@ -162,8 +181,14 @@ ScalableHistory.defaultProps = {
     fontWeight: "400",
     color: "#525f7f",
     lineHeight: "27px",
-    textAlign: ["left", "left"]
+    textAlign: ["left", "left"],
+    mb: 0
+  },
+  companiesSelect: {
+    labelPosition: "top",
+    labelText: "Select company to view",
+    options: [{ value: "grab", label: "Grab" }]
   }
 };
 
-export default ScalableHistory;
+export default TeamSection;

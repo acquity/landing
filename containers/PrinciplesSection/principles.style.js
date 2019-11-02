@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const TrustedWrapper = styled.section`
+const PrinciplesWrapper = styled.section`
   padding: 180px 0 150px;
   @media (max-width: 1440px) {
     padding: 150px 0 50px;
@@ -62,4 +62,4 @@ const FeatureSection = styled.section`
     }
   }
 `;
-export { TrustedWrapper, FeatureSection };
+export { PrinciplesWrapper, FeatureSection };
