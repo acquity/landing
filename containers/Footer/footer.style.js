@@ -137,7 +137,7 @@ const FooterWrapper = styled.section`
   }
   .mainRow {
     margin-top: 240px;
-    @media (max-width: 1220px){
+    @media (max-width: 1219px){
       margin-top: 160px;
     }
     @media (max-width: 1200px){
@@ -172,6 +172,7 @@ const ListItem = styled.li`
   }
 `;
 export const BgImageWrapper = styled.div`
+  z-index: -1;
   position: absolute;
   left: 0;
   width: 105%;
