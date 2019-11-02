@@ -37,8 +37,8 @@ const PrinciplesSection = ({
             />
             <Fade up>
               <div className="TrustedImageBtn">
-                <Link href="#1">
-                  <a>
+                {/* <Link href="https://github.com/acquity/api"> */}
+                  <a href="https://github.com/acquity/api" target="_blank">
                     {/* <Image
                       src={AppButton}
                       className="app_image_area"
@@ -50,7 +50,7 @@ const PrinciplesSection = ({
                       {...btnStyle}
                     />
                   </a>
-                </Link>
+                {/* </Link> */}
                 {/* <Link href="#1">
                   <a>
                     <Image

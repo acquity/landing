@@ -18,10 +18,28 @@ const Completionist = () => (
   <span className="readMore">You are good to go!</span>
 );
 
+const roundIsOpen = false;
+
 const renderer = ({ days, hours, minutes, seconds, completed }) => {
-  if (completed) {
+  if (!roundIsOpen) {
     // Render a complete state
-    return <Completionist />;
+    // return <Completionist />;
+    return (
+      <div className="countPortion inactive">
+        <div className="countSingle">
+          0 <span className="countText">Days</span>
+        </div>
+        <div className="countSingle">
+          0 <span className="countText">Hours</span>
+        </div>
+        <div className="countSingle">
+          0 <span className="countText">Minutes</span>
+        </div>
+        <div className="countSingle">
+          0 <span className="countText">Seconds</span>
+        </div>
+      </div>
+    );
   } else {
     // Render a countdown
     return (
@@ -70,14 +88,21 @@ const RoundSection = ({
               description={<Text {...description} />}
             />
             <Box className="btnSection">
-              <Text {...btnTitle} />
+              <Text
+                {...btnTitle}
+                content={
+                  roundIsOpen
+                    ? "Round is currently open."
+                    : "Round is currently closed."
+                }
+              />
             </Box>
             <Fade up>
               <Box className="countDownSection">
                 <Countdown
                   date={Date.now() + 309999999}
                   renderer={renderer}
-                  completed={false}
+                  completed={!roundIsOpen}
                 />
               </Box>
             </Fade>
@@ -170,7 +195,6 @@ RoundSection.defaultProps = {
     fontWeight: "500"
   },
   btnTitle: {
-    content: "Round is currently open.",
     as: "span",
     fontSize: ["18px", "18px", "20px", "20px", "20px"],
     lineHeight: ["25px", "27px", "27px", "27px", "27px"],
