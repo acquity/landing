@@ -13,8 +13,8 @@ import { DrawerContext } from '~/contexts/DrawerContext';
 import { MENU_ITEMS } from '~/data';
 import ScrollSpyMenu from '~/components/ScrollSpyMenu';
 
-import LogoImage from '~/assets/image/saasTwo/logo-white.png';
-import LogoImageAlt from '~/assets/image/saasTwo/logo.png';
+import LogoImage from '~/assets/image/crypto/logo-white.png';
+import LogoImageAlt from '~/assets/image/crypto/logo.png';
 
 const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
   const { state, dispatch } = useContext(DrawerContext);

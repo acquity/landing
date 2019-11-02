@@ -28,6 +28,11 @@ export default () => {
           <meta name="theme-color" content="#ec5555" />
 
           <link
+            href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&swap=true"
+            rel="stylesheet"
+          />
+
+          <link
             rel="stylesheet"
             href="~/assets/fonts/stylesheet.css"
             type="text/css"
