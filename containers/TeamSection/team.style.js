@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 
-const ScalableWrapper = styled.section`
+const TeamWrapper = styled.section`
   padding: 50px 0 0px;
   .colleft {
     width: calc(50% - 70px);
     margin-right: 70px;
     @media (max-width: 1199px) {
       width: 100%;
+      margin-top: 100px;
+      margin-right: 0;
     }
     .TrustedImageBtn {
       display: flex;
@@ -18,18 +20,22 @@ const ScalableWrapper = styled.section`
         margin-right: 20px;
       }
     }
+    @media (max-width: 480px){
+      margin-top: 40px;
+    }
   }
   .colright {
     width: 50%;
+    margin-top: -7%;
     @media (max-width: 1199px) {
       width: 100%;
       margin-left: 0;
-      margin-top: 100px;
+      margin-top: auto;
     }
     @media (max-width: 480px) {
       width: 100%;
       margin-left: 0;
-      margin-top: 40px;
+      margin-top: auto;
     }
     img {
       height: 100%;
@@ -42,10 +48,14 @@ const FeatureSection = styled.section`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
   .featureWrapper {
-    max-width: 280px;
+    max-width: 100%;
     margin-bottom: 45px;
     display: flex;
+    @media (max-width: 1199px){
+      max-width: 100%;
+    }
     @media (max-width: 599px) {
       max-width: 100%;
     }
@@ -58,11 +68,10 @@ const FeatureSection = styled.section`
       border-color: rgb(233, 227, 254);
       border-radius: 10px;
       background-color: rgb(243, 242, 250);
-      padding: 8px 10px;
     }
     .contextPortion {
       margin-left: 15px;
     }
   }
 `;
-export { ScalableWrapper, FeatureSection };
+export { TeamWrapper, FeatureSection };

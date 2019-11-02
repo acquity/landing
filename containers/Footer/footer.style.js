@@ -57,7 +57,7 @@ const FooterWrapper = styled.section`
       .select__placeholder {
         font-size: 16px;
         color: #fff;
-        font-family: 'Lato';
+        font-family: 'Nexa Light';
         font-weight: 400;
       }
       .select__indicator {
@@ -68,7 +68,7 @@ const FooterWrapper = styled.section`
         .select__single-value {
           font-size: 16px;
           color: #fff;
-          font-family: 'Lato';
+          font-family: 'Nexa Light';
           font-weight: 400;
         }
       }
@@ -112,7 +112,7 @@ const FooterWrapper = styled.section`
     }
     .copyRightText {
       font-size: 16px;
-      font-family: 'Lato';
+      font-family: 'Nexa Light';
       font-weight: 400;
       color: #fff;
       @media (max-width: 480px) {
@@ -136,7 +136,22 @@ const FooterWrapper = styled.section`
     }
   }
   .mainRow {
-    margin-top: 160px;
+    margin-top: 240px;
+    @media (max-width: 1220px){
+      margin-top: 160px;
+    }
+    @media (max-width: 1200px){
+      margin-top: 0px;
+    }
+
+    .footer-cols{
+      display: flex;
+      justify-content: flex-start;
+
+      @media (max-width: 768px){
+        flex-wrap: wrap;
+      }
+    }
   }
 `;
 
@@ -159,15 +174,16 @@ const ListItem = styled.li`
 export const BgImageWrapper = styled.div`
   position: absolute;
   left: 0;
-  width: 100%;
+  width: 105%;
   top: 0;
   @media (max-width: 1200px) {
     display: none;
   }
   img {
-    width: 100%;
+    width: 101%;
     height: auto;
     display: block;
+    margin-top: -1px;
   }
 `;
 

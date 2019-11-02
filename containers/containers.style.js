@@ -2,7 +2,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nexa Light', sans-serif;
   }
 
   h1,
@@ -11,10 +11,10 @@ export const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nexa Bold', sans-serif;
   }
   p{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nexa Light', sans-serif;
   }
 
   section {
@@ -54,13 +54,13 @@ export const GlobalStyle = createGlobalStyle`
               font-size: 18px;
             }
             &:hover {
-              color: rgb(255,148,147);;
+              color: rgb(38, 126, 208);;
             }
             &:before{
               content: '';
               width: 7px;
               height: 7px;
-              background: rgb(255,148,147);
+              background: rgb(38, 126, 208);
               border-radius: 50%;
               position: absolute;
               top: 50%;
@@ -71,7 +71,7 @@ export const GlobalStyle = createGlobalStyle`
           }
           &.is-current {
             a {
-              color: rgb(255,148,147);;
+              color: rgb(38, 126, 208);;
               &:before{
                 opacity: 1;
               }
@@ -128,12 +128,12 @@ export const ContentWrapper = styled.div`
           a {
             color: #000;
             &:hover {
-              color: rgb(255, 148, 147);
+              color: rgb(38, 126, 208);
             }
           }
           &.is-current {
             a {
-              color: rgb(255, 148, 147);
+              color: rgb(38, 126, 208);
             }
           }
         }
@@ -170,7 +170,7 @@ export const ContentWrapper = styled.div`
         }
         &.is-current {
           a {
-            color: rgb(255, 148, 147);
+            color: rgb(38, 126, 208);
           }
         }
         a {
@@ -180,7 +180,7 @@ export const ContentWrapper = styled.div`
           color: #fff;
           transition: 0.15s ease-in-out;
           &:hover {
-            color: rgb(255, 148, 147);
+            color: rgb(38, 126, 208);
           }
         }
       }
@@ -196,21 +196,21 @@ export const ContentWrapper = styled.div`
         border-radius: 6px;
         background-image: -moz-linear-gradient(
           29deg,
-          rgb(255, 148, 147) 0%,
-          rgb(255, 120, 162) 100%
+          rgb(38, 126, 208) 0%,
+          rgb(85, 96, 232) 100%
         );
         background-image: -webkit-linear-gradient(
           29deg,
-          rgb(255, 148, 147) 0%,
-          rgb(255, 120, 162) 100%
+          rgb(38, 126, 208) 0%,
+          rgb(85, 96, 232) 100%
         );
         background-image: -ms-linear-gradient(
           29deg,
-          rgb(255, 148, 147) 0%,
-          rgb(255, 120, 162) 100%
+          rgb(38, 126, 208) 0%,
+          rgb(85, 96, 232) 100%
         );
         &:hover {
-          box-shadow: -6.691px 7.431px 20px 0px rgba(255, 131, 157, 0.2);
+          box-shadow: -6.691px 7.431px 20px 0px rgba(38, 126, 208, 0.2);
         }
         > span {
           font-weight: 700;

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const TrustedWrapper = styled.section`
+const PrinciplesWrapper = styled.section`
   padding: 180px 0 150px;
   @media (max-width: 1440px) {
     padding: 150px 0 50px;
@@ -22,7 +22,33 @@ const TrustedWrapper = styled.section`
       .app_image_area {
         margin-right: 20px;
       }
+      .mainButton {
+        border-radius: 6px;
+        background-image: -moz-linear-gradient(
+          29deg,
+          rgb(38, 126, 208) 0%,
+          rgb(85, 96, 232) 100%
+        );
+        background-image: -webkit-linear-gradient(
+          29deg,
+          rgb(38, 126, 208) 0%,
+          rgb(85, 96, 232) 100%
+        );
+        background-image: -ms-linear-gradient(
+          29deg,
+          rgb(38, 126, 208) 0%,
+          rgb(85, 96, 232) 100%
+        );
+        &:hover {
+          box-shadow: -6.691px 7.431px 20px 0px rgba(38, 126, 208, 0.2);
+        }
+        > span {
+          font-weight: 700;
+          letter-spacing: 1px;
+        }
+      }
     }
+    
   }
   .colright {
     width: calc(60% - 100px);
@@ -62,4 +88,4 @@ const FeatureSection = styled.section`
     }
   }
 `;
-export { TrustedWrapper, FeatureSection };
+export { PrinciplesWrapper, FeatureSection };

@@ -1,21 +1,22 @@
-import React, { Fragment } from 'react';
-import Head from 'next/head';
-import Sticky from 'react-stickynode';
-import { ThemeProvider } from 'styled-components';
-import { theme } from '~/assets/theme';
-import { ResetCSS } from '~/assets/css/style';
-import { GlobalStyle, ContentWrapper } from '~/containers/containers.style';
-import { DrawerProvider } from '~/contexts/DrawerContext';
-import Navbar from '~/containers/Navbar';
-import Banner from '~/containers/BannerSection';
-import BannerSlider from '~/containers/BannerSlider';
-import Transactions from '~/containers/Transaction';
-import ControlSections from '~/containers/ControlSection';
-import TrustedProofSections from '~/containers/TrustedProof';
-import ScalableSections from '~/containers/ScalableSection';
-import SlideSections from '~/containers/SlideSection';
-import BetaSections from '~/containers/BetaSection';
-import Footer from '~/containers/Footer';
+import React, { Fragment } from "react";
+import Head from "next/head";
+import Sticky from "react-stickynode";
+import { ThemeProvider } from "styled-components";
+import { theme } from "~/assets/theme";
+import { ResetCSS } from "~/assets/css/style";
+import { GlobalStyle, ContentWrapper } from "~/containers/containers.style";
+import { DrawerProvider } from "~/contexts/DrawerContext";
+import Navbar from "~/containers/Navbar";
+import Banner from "~/containers/BannerSection";
+import BannerSlider from "~/containers/BannerSlider";
+import AboutSections from "~/containers/AboutSection";
+import RoundSections from "~/containers/RoundSection";
+import PrinciplesSections from "~/containers/PrinciplesSection";
+import TeamSections from "~/containers/TeamSection";
+import SlideSections from "~/containers/SlideSection";
+import JoinUsSections from "~/containers/JoinUsSection";
+import ContactSections from "~/containers/Contact";
+import Footer from "~/containers/Footer";
 
 export default () => {
   return (
@@ -26,10 +27,11 @@ export default () => {
           <meta name="Description" content="acquity. Acquire private equity." />
           <meta name="theme-color" content="#ec5555" />
 
-          {/* Load google fonts */}
           <link
-            href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Heebo:300,400,500,700|Lato&swap=true"
             rel="stylesheet"
+            href="~/assets/fonts/stylesheet.css"
+            type="text/css"
+            charset="utf-8"
           />
         </Head>
         <ResetCSS />
@@ -42,12 +44,13 @@ export default () => {
           </Sticky>
           <Banner />
           <BannerSlider />
-          <Transactions />
-          <ControlSections />
-          <TrustedProofSections />
-          <ScalableSections />
+          <AboutSections />
+          <RoundSections />
+          <PrinciplesSections />
+          <TeamSections />
           <SlideSections />
-          <BetaSections />
+          <JoinUsSections />
+          {/* <ContactSections /> */}
           <Footer />
         </ContentWrapper>
       </Fragment>

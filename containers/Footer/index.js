@@ -21,27 +21,8 @@ const Footer = ({ row, col, colOne, colTwo, titleStyle }) => {
       </BgImageWrapper>
       <Container noGutter mobileGutter width="1200px">
         <Box className="row mainRow" {...row}>
-          <Box {...colOne}>
-            <Heading
-              content="Download The App"
-              {...titleStyle}
-              className="appDownload"
-            />
-            <Box className="imageWrapper">
-              <Link href="#">
-                <a>
-                  <Image src={AppImage} alt="App Image" />
-                </a>
-              </Link>
-              <Link href="#">
-                <a>
-                  <Image src={PlaystoreImage} alt="PlaystoreImage Image" />
-                </a>
-              </Link>
-            </Box>
-          </Box>
           {/* End of footer logo column */}
-          <Box {...colTwo}>
+          <Box {...colOne} className="footer-cols">
             {menuWidget.map(widget => (
               <Box className="col" {...col} key={widget.id}>
                 <Heading content={widget.title} {...titleStyle} />
@@ -61,7 +42,7 @@ const Footer = ({ row, col, colOne, colTwo, titleStyle }) => {
         </Box>
         <Box className="row copyRight" {...row}>
           <Text
-            content="Copyright 2018 @Crypto Corporation."
+            content="Copyright © 2019 Acquity."
             className="copyRightText"
           />
         </Box>
@@ -91,8 +72,8 @@ Footer.defaultProps = {
   },
   // Footer col one style
   colOne: {
-    width: ['100%', '30%', '33%', '33%'],
-    mb: ['30px', 0],
+    width: ['100%', '20%', '20%', '20%'],
+    mb: ['0px', 0],
     pl: ['0px', 0],
     pr: ['0px', '0px', 0],
   },
@@ -104,9 +85,9 @@ Footer.defaultProps = {
   },
   // Footer col default style
   col: {
-    width: ['100%', 1 / 3, 1 / 3, 1 / 3],
+    width: ['auto', 1 / 3, 1 / 3, 1 / 3],
     pl: [0, '15px'],
-    pr: [0, '15px'],
+    pr: ['90px', '15px'],
     mb: ['30px', '30px'],
   },
   // widget title default style
@@ -116,7 +97,7 @@ Footer.defaultProps = {
     fontWeight: '600',
     lineHeight: '1.34',
     mb: ['15px', '18px', '18px', '20px', '30px'],
-    fontFamily: 'Poppins',
+    fontFamily: 'Nexa Bold',
   },
   // Default logo size
   logoStyle: {
@@ -129,7 +110,7 @@ Footer.defaultProps = {
     fontSize: '16px',
     mb: '12px',
     fontWeight: '600',
-    fontFamily: 'Lato',
+    fontFamily: 'Nexa Light',
   },
 };
 

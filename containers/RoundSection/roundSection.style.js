@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const ControlWrapper = styled.section`
+const RoundWrapper = styled.section`
   padding: 60px 0;
   display: flex;
   justify-content: center;
@@ -34,11 +34,11 @@ const ControlWrapper = styled.section`
     @media (max-width: 480px) {
       margin-top: 50px;
     }
-    .readMoreSection {
+    .btnSection {
       .readMore {
         font-size: 20px;
         font-weight: 500;
-        font-family: 'Poppins';
+        font-family: 'Nexa Bold';
         @media (max-width: 480px) {
           font-size: 16px;
         }
@@ -49,7 +49,7 @@ const ControlWrapper = styled.section`
       .readMore {
         font-size: 20px;
         font-weight: 500;
-        font-family: 'Poppins';
+        font-family: 'Nexa Bold';
         color: #32325d;
         @media (max-width: 480px) {
           font-size: 16px;
@@ -63,14 +63,14 @@ const ControlWrapper = styled.section`
           margin-right: 50px;
           font-size: 30px;
           font-weight: 700;
-          font-family: 'Poppins';
+          font-family: 'Nexa Bold';
           color: #32325d;
           justify-content: center;
           align-items: center;
           .countText {
             font-size: 16px;
             font-weight: 400;
-            font-family: 'Poppins';
+            font-family: 'Nexa Bold';
             color: #525f7f;
           }
         }
@@ -86,21 +86,21 @@ const ControlWrapper = styled.section`
         border-radius: 6px;
         background-image: -moz-linear-gradient(
           29deg,
-          rgb(255, 148, 147) 0%,
-          rgb(255, 120, 162) 100%
+          rgb(38, 126, 208) 0%,
+          rgb(85, 96, 232) 100%
         );
         background-image: -webkit-linear-gradient(
           29deg,
-          rgb(255, 148, 147) 0%,
-          rgb(255, 120, 162) 100%
+          rgb(38, 126, 208) 0%,
+          rgb(85, 96, 232) 100%
         );
         background-image: -ms-linear-gradient(
           29deg,
-          rgb(255, 148, 147) 0%,
-          rgb(255, 120, 162) 100%
+          rgb(38, 126, 208) 0%,
+          rgb(85, 96, 232) 100%
         );
         &:hover {
-          box-shadow: -6.691px 7.431px 20px 0px rgba(255, 131, 157, 0.2);
+          box-shadow: -6.691px 7.431px 20px 0px rgba(38, 126, 208, 0.2);
         }
         > span {
           font-weight: 700;
@@ -123,4 +123,4 @@ const ControlWrapper = styled.section`
   }
 `;
 
-export { ControlWrapper };
+export { RoundWrapper };

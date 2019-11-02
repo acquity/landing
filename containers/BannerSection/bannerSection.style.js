@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { themeGet } from 'styled-system';
-import BannerBG from '~/assets/image/crypto/main_bg.svg';
+import BannerBG from '~/assets/image/crypto/main_bg.png';
 
 const BannerWrapper = styled.section`
   padding-top: 210px;
@@ -21,7 +21,7 @@ const BannerWrapper = styled.section`
   }
   @media (max-width: 768px) {
     background-image: none;
-    background-color: #6d4efe;
+    background-color: #0c255f;
   }
 
   @media only screen and (max-width: 480px) {
@@ -98,7 +98,7 @@ const BannerWrapper = styled.section`
         padding-left: 15px;
         font-size: 15px;
         font-weight: 500 !important;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Nexa Bold', sans-serif;
       }
       &:hover {
         box-shadow: none !important;

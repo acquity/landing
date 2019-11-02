@@ -41,7 +41,7 @@ const TestimonialSection = ({
           <GlideCarousel
             options={carouselOptions}
             bullets={true}
-            numberOfBullets={4}
+            numberOfBullets={3}
             controls={false}
           >
             <>
@@ -125,14 +125,14 @@ TestimonialSection.defaultProps = {
     fontWeight: '500',
     color: 'rgb(50, 50, 93)',
     mb: '5px',
-    fontFamily: 'Poppins',
+    fontFamily: 'Nexa Bold',
   },
   designationStyle: {
     fontSize: '16px',
     fontWeight: '400',
     color: 'rgb(82, 95, 127)',
     mb: '0',
-    fontFamily: 'Poppins',
+    fontFamily: 'Nexa Light',
   },
 };
 

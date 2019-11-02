@@ -8,9 +8,9 @@ import Heading from '~/components/Heading';
 import FeatureBlock from '~/components/FeatureBlock';
 import Container from '~/components/UI/Container';
 import { FeatureSliderWrapper } from './slide.style';
-import Image1 from '~/assets/image/crypto/slider-1.png';
-import Image2 from '~/assets/image/crypto/slider-2.png';
-import Image3 from '~/assets/image/crypto/slider-3.png';
+import Image1 from '~/assets/image/crypto/login.png';
+import Image2 from '~/assets/image/crypto/mainapp.png';
+// import Image3 from '~/assets/image/crypto/slider-3.png';
 const images = [
   {
     original: `${Image1}`,
@@ -18,23 +18,23 @@ const images = [
   {
     original: `${Image2}`,
   },
-  {
-    original: `${Image3}`,
-  },
-  {
-    original: `${Image2}`,
-  },
-  {
-    original: `${Image1}`,
-  },
-  {
-    original: `${Image3}`,
-  },
+  // {
+  //   original: `${Image3}`,
+  // },
+  // {
+  //   original: `${Image2}`,
+  // },
+  // {
+  //   original: `${Image1}`,
+  // },
+  // {
+  //   original: `${Image3}`,
+  // },
 ];
 
 const FeatureSlider = ({ row, title, description, sectionSubTitle }) => {
   return (
-    <FeatureSliderWrapper id="featureslider">
+    <FeatureSliderWrapper id="product">
       <Container noGutter mobileGutter>
         <Box className="row" {...row}>
           <Text {...sectionSubTitle} />
@@ -82,7 +82,7 @@ FeatureSlider.defaultProps = {
   },
 
   title: {
-    content: 'A Trusted Proof of Investment Vehicle',
+    content: 'A trusted matching platform for equity',
     fontSize: ['24px', '26px', '30px', '36px', '40px'],
     lineHeight: ['30px', '32px', '40px', '50px', '55px'],
     fontWeight: '700',
@@ -94,7 +94,7 @@ FeatureSlider.defaultProps = {
 
   description: {
     content:
-      'Easily buy, sell or exchange over 30 different cryptocurrencies. Now euro deposits and withdrawn available.',
+      'Find the trade you want within the week and start spending time on actually trading.',
     fontSize: '16px',
     fontWeight: '400',
     color: '#525f7f',
@@ -103,11 +103,11 @@ FeatureSlider.defaultProps = {
     textAlign: ['center', 'center'],
   },
   sectionSubTitle: {
-    content: 'Fast, Cheap, Zero Fraud',
+    content: 'Seamless experience from end-to-end',
     as: 'span',
     textAlign: 'left',
     fontSize: ['16px', '16px', '18px', '20px', '20px'],
-    fontFamily: 'Poppins',
+    fontFamily: 'Nexa Bold',
     fontWeight: '600',
     lineHeight: '27px',
     color: '#525f7f',
