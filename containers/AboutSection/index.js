@@ -33,7 +33,7 @@ const AboutSection = ({
               title={<Heading {...title} />}
               description={<Text {...description} />}
               button={
-                <Link href="https://app.acquity.io">
+                <Link href="https://staging.app.acquity.io">
                   <a>
                     <Button title="GET STARTED" {...btnStyle} />
                   </a>
