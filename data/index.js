@@ -220,7 +220,7 @@ export const menuWidget = [
     menuItems: [
       {
         id: 1,
-        url: 'https://staging.app.acquity.io',
+        url: 'https://app.acquity.io',
         text: 'Login Now',
       },
     ],
