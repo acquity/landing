@@ -27,7 +27,7 @@ const BannerSection = ({
 }) => {
   const ButtonGroup = () => (
     <Fragment>
-      <Link href="https://app.acquity.io">
+      <Link href="https://staging.app.acquity.io">
         <a>
           <Button title="Get Started" {...btnStyle} />
         </a>
