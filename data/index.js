@@ -140,21 +140,21 @@ export const TEAM_MEMBERS = [
     title: 'Wei Zhu',
     des: 'Former CTO at Grab',
     company: 'grab',
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/wei-zhu/",
   },
   {
     image: TEAM2,
     title: 'Arul Kumaravel',
     des: 'Former VP of Engineering at Grab',
     company: 'grab',
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/arulk/",
   },
   {
     image: TEAM3,
     title: 'Ke Liang',
     des: 'Former Head of Engineering at Grab',
     company: 'grab',
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/ke-liang-93952812/",
   },
 ];
 

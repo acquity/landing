@@ -69,6 +69,14 @@ const FeatureSection = styled.section`
       border-radius: 10px;
       background-color: rgb(243, 242, 250);
     }
+    img.linkedin{
+      width: 25px;
+      height: 25px;
+      border-radius: 0;
+      background: none;
+      border: none;
+      margin-bottom: none;
+    }
     .contextPortion {
       margin-left: 15px;
     }

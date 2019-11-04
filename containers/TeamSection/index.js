@@ -10,7 +10,7 @@ import Container from "~/components/UI/Container";
 import Select from "~/components/Select";
 import { TEAM_MEMBERS } from "~/data";
 import { TeamWrapper, FeatureSection } from "./team.style";
-import Link from "next/link";
+import LinkedIn from "~/assets/image/crypto/linkedin.png";
 
 const TeamSection = ({
   row,
@@ -49,11 +49,13 @@ const TeamSection = ({
                       />
 
                       <Text content={item.des} {...featureDescriptionStyle} />
-                      <Link href={item.linkedin}>
-                        <a style={{ color: "rgb(38, 126, 208)" }}>
-                          <Text content="LinkedIn" />
-                        </a>
-                      </Link>
+                      <a href={item.linkedin} target="_blank">
+                        <Image
+                          src={LinkedIn}
+                          className="linkedin"
+                          alt="LinkedIn"
+                        />
+                      </a>
                     </Box>
                   </Fade>
                 </div>
