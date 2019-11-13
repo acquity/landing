@@ -31,7 +31,7 @@ const JoinUsSection = ({
           />
         </Box>
         <Box className="button">
-          <Link href="https://staging.app.acquity.io">
+          <Link href="https://app.acquity.io">
             <a>
               <Button
                 title="GET STARTED"
