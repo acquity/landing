@@ -106,7 +106,7 @@ const RoundSection = ({
               </Box>
             </Fade>
             <Box className="countDownButton">
-              <Link href="https://staging.app.acquity.io">
+              <Link href="https://app.acquity.io">
                 <a>
                   <Button
                     title="GO TO APP"
