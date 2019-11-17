@@ -55,7 +55,7 @@ export default () => {
           <TeamSections />
           <SlideSections />
           <JoinUsSections />
-          {/* <ContactSections /> */}
+          <ContactSections />
           <Footer />
         </ContentWrapper>
       </Fragment>
