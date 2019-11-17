@@ -21,9 +21,9 @@ const FeatureSliderWrapper = styled.section`
         }
         .image-gallery-slides {
           height: 100%;
-          border-radius: 20px;
+          // border-radius: 20px;
           @media (max-width: 990px) {
-            border-radius: 40px;
+            // border-radius: 40px;
           }
           .image-gallery-image {
             display: flex;
