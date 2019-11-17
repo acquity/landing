@@ -34,7 +34,7 @@ const ContactSection = ({
           </Box>
           <Box {...row}>
             <Box {...contactForm}>
-              <form name="contact" method="post" className="form-container">
+              <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field"className="form-container">
                 <input type="hidden" name="form-name" value="contact" />
                 <p className="form-style">
                   <label className="label-left">

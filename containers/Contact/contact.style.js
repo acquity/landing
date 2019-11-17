@@ -71,7 +71,7 @@ const SectionMainWrapper = styled.section`
         input {
           width: 100%;
           background: #fff;
-          font-family: "Nexa Light";
+          font-family: "Nexa Light", "Poppins", sans-serif;
           font-size: 16px;
           font-weight: 500;
           color: #343d48;
@@ -92,7 +92,7 @@ const SectionMainWrapper = styled.section`
         textarea {
           width: 100%;
           background: #fff;
-          font-family: "Nexa Light";
+          font-family: "Nexa Light", "Poppins", sans-serif;
           font-size: 16px;
           font-weight: 500;
           color: #343d48;
