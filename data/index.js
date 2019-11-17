@@ -27,18 +27,23 @@ export const MENU_ITEMS = [
   {
     label: 'How It Works',
     path: '#about',
-    offset: '-40',
+    offset: '40',
   },
   {
     label: 'Our Team',
     path: '#team',
-    offset: '40',
+    offset: '60',
   },
 
   {
     label: 'Product',
     path: '#product',
     offset: '0',
+  },
+  {
+    label: 'Contact Us',
+    path: '#contact',
+    offset: '20',
   },
 ];
 
