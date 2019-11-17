@@ -10,7 +10,9 @@ import Container from '~/components/UI/Container';
 import { FeatureSliderWrapper } from './slide.style';
 import Image1 from '~/assets/image/crypto/login.png';
 import Image2 from '~/assets/image/crypto/mainapp.png';
-// import Image3 from '~/assets/image/crypto/slider-3.png';
+import Image3 from '~/assets/image/crypto/creation.png';
+import Image4 from '~/assets/image/crypto/chat.png';
+
 const images = [
   {
     original: `${Image1}`,
@@ -18,6 +20,12 @@ const images = [
   {
     original: `${Image2}`,
   },
+  {
+    original: `${Image3}`,
+  },
+  {
+    original: `${Image4}`,
+  }
 ];
 
 const FeatureSlider = ({ row, title, description, sectionSubTitle }) => {
