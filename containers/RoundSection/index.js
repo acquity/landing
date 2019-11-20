@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useReducer, useEffect } from "react";
 import PropTypes from "prop-types";
 import Link from "next/link";
 import Countdown from "react-countdown-now";
@@ -27,35 +27,35 @@ const RoundSection = ({
   cardArea,
   btnTitle
 }) => {
-  const [hasRound, setHasRound] = useState(true);
-  const [endTime, setEndTime] = useState(0);
-  const [isLoading, setLoading] = useState(true);
-
-  async function fetchData() {
-    const res = await fetch("https://api.acquity.io/v1/round/active");
-    if (res!==null){
-    res
-      .json()
-      .then(res => {
-        if (!res["is_concluded"]) {
-          setEndTime(res["end_time"]);
-        }else{
-          setHasRound(false);
-        }
-      })
-      .then(setLoading(false));
-    }else{
-      setHasRound(false);
-      setLoading(false);
-    }
-  }
-
-  useEffect(() => {
-    fetchData();
+  const [state, setState] = useReducer((s, a) => ({ ...s, ...a }), {
+    hasRound: false,
+    isLoading: true,
+    endTime: 0
   });
 
+  useEffect(() => {
+    async function fetchData() {
+      const res = await fetch("https://api.acquity.io/v1/round/active")
+        .then(data => data.json())
+        .catch(() => null);
+      if (res) {
+        setState({
+          hasRound: !res.is_concluded,
+          isLoading: false,
+          endTime: res.end_time
+        });
+      } else {
+        setState({
+          hasRound: false,
+          isLoading: false
+        });
+      }
+    }
+    fetchData();
+  }, []);
+
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
-    if (!hasRound) {
+    if (!state.hasRound) {
       // return <Completionist />;
       return (
         <div className="countPortion inactive">
@@ -111,7 +111,7 @@ const RoundSection = ({
               title={<Heading {...title} />}
               description={<Text {...description} />}
             />
-            {isLoading ? (
+            {state.isLoading ? (
               <Box className="btnSection">
                 <Text {...btnTitle} content={"Loading..."} />
               </Box>
@@ -121,7 +121,7 @@ const RoundSection = ({
                   <Text
                     {...btnTitle}
                     content={
-                      hasRound
+                      state.hasRound
                         ? "Round is currently open."
                         : "Round is currently closed. The round will open when enough sellers have placed their asks. You may still place your asks or bids while waiting for the round to open."
                     }
@@ -130,9 +130,9 @@ const RoundSection = ({
                 <Fade up>
                   <Box className="countDownSection">
                     <Countdown
-                      date={endTime * 1000}
+                      date={state.endTime * 1000}
                       renderer={renderer}
-                      completed={!hasRound}
+                      completed={!state.hasRound}
                     />
                   </Box>
                 </Fade>
@@ -142,7 +142,7 @@ const RoundSection = ({
               <Link href="https://app.acquity.io">
                 <a>
                   <Button
-                    title={hasRound ? "JOIN ROUND NOW" : "GO TO APP"}
+                    title={state.hasRound ? "JOIN ROUND NOW" : "GO TO APP"}
                     className="countDownMainButton"
                     {...btnStyle}
                   />
