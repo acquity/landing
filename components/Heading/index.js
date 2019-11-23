@@ -71,5 +71,5 @@ Heading.defaultProps = {
   as: 'h2',
   mt: 0,
   mb: '1rem',
-  fontWeight: 'bold'
+  // fontWeight: 'bold'
 };

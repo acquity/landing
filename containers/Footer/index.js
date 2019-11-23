@@ -94,10 +94,10 @@ Footer.defaultProps = {
   titleStyle: {
     color: '#FFFFFF',
     fontSize: ['15px', '16px', '16px', '18px', '18px'],
-    fontWeight: '600',
+    // fontWeight: '600',
     lineHeight: '1.34',
     mb: ['15px', '18px', '18px', '20px', '30px'],
-    fontFamily: 'Poppins'
+    fontFamily: "'Nexa Bold', 'Poppins'",
   },
   // Default logo size
   logoStyle: {
@@ -109,8 +109,8 @@ Footer.defaultProps = {
     color: '#FFFFFF',
     fontSize: '16px',
     mb: '12px',
-    fontWeight: '600',
-    fontFamily: 'Poppins',
+    // fontWeight: '600',
+    fontFamily: "'Nexa Light','Poppins'",
   },
 };
 

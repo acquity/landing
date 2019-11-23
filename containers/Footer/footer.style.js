@@ -58,7 +58,7 @@ const FooterWrapper = styled.section`
         font-size: 16px;
         color: #fff;
         font-family: 'Nexa Regular', 'Poppins',;
-        font-weight: 400;
+        // font-weight: 400;
       }
       .select__indicator {
         color: #fff;
@@ -69,7 +69,7 @@ const FooterWrapper = styled.section`
           font-size: 16px;
           color: #fff;
           font-family: 'Nexa Regular', 'Poppins',;
-          font-weight: 400;
+          // font-weight: 400;
         }
       }
     }
@@ -113,7 +113,7 @@ const FooterWrapper = styled.section`
     .copyRightText {
       font-size: 16px;
       font-family: 'Nexa Regular', 'Poppins',;
-      font-weight: 400;
+      // font-weight: 400;
       color: #fff;
       @media (max-width: 480px) {
         font-size: 14px;

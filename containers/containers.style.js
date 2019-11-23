@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
   h5,
   h6 {
     font-family: 'Nexa Bold', 'Poppins', sans-serif;
+    font-weight: normal;
   }
   p{
     font-family: 'Nexa Regular', 'Poppins',sans-serif;
@@ -46,7 +47,7 @@ export const GlobalStyle = createGlobalStyle`
           }
           a{
             font-size: 20px;
-            font-weight: 400;
+            // font-weight: 400;
             color: #000;
             position: relative;
             transition: 0.15s ease-in-out;
@@ -176,7 +177,7 @@ export const ContentWrapper = styled.div`
         a {
           padding: 5px;
           font-size: 16px;
-          font-weight: 400;
+          // font-weight: 400;
           color: #fff;
           transition: 0.15s ease-in-out;
           &:hover {
@@ -213,7 +214,7 @@ export const ContentWrapper = styled.div`
           box-shadow: -6.691px 7.431px 20px 0px rgba(38, 126, 208, 0.2);
         }
         > span {
-          font-weight: 700;
+          // font-weight: 700;
           letter-spacing: 1px;
         }
       }

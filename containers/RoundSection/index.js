@@ -190,7 +190,7 @@ RoundSection.defaultProps = {
     content: "Take control of your identity in our round-based system",
     fontSize: ["24px", "26px", "30px", "36px", "40px"],
     lineHeight: ["30px", "32px", "40px", "50px", "55px"],
-    fontWeight: "700",
+    // fontWeight: "700",
     color: "#32325d",
     letterSpacing: "-0.010em",
     mb: "20px",
@@ -202,7 +202,7 @@ RoundSection.defaultProps = {
     content:
       "Acquity uses weekly rounds to collect anonymised bids and asks, before matching them with our algorithm. Simply join before the round ends and get notified when you match.",
     fontSize: "16px",
-    fontWeight: "400",
+    // fontWeight: "400",
     color: "#525f7f",
     lineHeight: "28px",
     mb: ["30px", "30px", "35px", "35px", "45px"],
@@ -215,7 +215,7 @@ RoundSection.defaultProps = {
     textAlign: "left",
     fontSize: ["16px", "16px", "18px", "20px", "20px"],
     fontFamily: "'Nexa Bold','Poppins'",
-    fontWeight: "600",
+    // fontWeight: "600",
     lineHeight: "27px",
     color: "#525f7f",
     textAlign: ["left", "left"]
@@ -224,13 +224,13 @@ RoundSection.defaultProps = {
   btnStyle: {
     minWidth: "156px",
     fontSize: "14px",
-    fontWeight: "500"
+    // fontWeight: "500"
   },
   btnTitle: {
     as: "span",
     fontSize: ["18px", "18px", "20px", "20px", "20px"],
     lineHeight: ["25px", "27px", "27px", "27px", "27px"],
-    fontWeight: "500",
+    // fontWeight: "500",
     color: "#32325d",
     letterSpacing: "-0.010em",
     mb: "10px",

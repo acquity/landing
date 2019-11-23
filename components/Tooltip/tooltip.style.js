@@ -91,7 +91,7 @@ const TooltipStyle = styled.span`
 
 const TriggerStyle = styled.span`
   display: inline-block;
-  font-weight: 700;
+  // font-weight: 700;
   ${fontSize}
   ${fontWeight}
   ${color}
