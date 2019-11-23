@@ -6,6 +6,7 @@ import Heading from "~/components/Heading";
 import Button from "~/components/Button";
 import FeatureBlock from "~/components/FeatureBlock";
 import Container from "~/components/UI/Container";
+import Fade from "react-reveal/Fade";
 
 import { SectionMainWrapper } from "./contact.style";
 
@@ -34,26 +35,44 @@ const ContactSection = ({
           </Box>
           <Box {...row}>
             <Box {...contactForm}>
-              <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field"className="form-container">
+              <form
+                name="contact"
+                method="post"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                className="form-container"
+              >
                 <input type="hidden" name="form-name" value="contact" />
-                <p className="form-style">
-                  <label className="label-left">
-                    Your Name:<br/><input type="text" name="name" />
-                  </label>
-                  <label className="label-right">
-                    Your Email:<br/><input type="email" name="email" />
-                  </label>
-                </p>
-                <p className="form-style">
-                  <label>
-                    Message:<br/><textarea name="message"></textarea>
-                  </label>
-                </p>
-                <p>
-                  <Button {...button} title="SEND MESSAGE" />
-                </p>
+                <Fade up>
+                  <p className="form-style">
+                    <label className="label-left">
+                      Your Name:
+                      <br />
+                      <input type="text" name="name" />
+                    </label>
+                    <label className="label-right">
+                      Your Email:
+                      <br />
+                      <input type="email" name="email" />
+                    </label>
+                  </p>
+                </Fade>
+                <Fade up>
+                  <p className="form-style">
+                    <label>
+                      Message:
+                      <br />
+                      <textarea name="message"></textarea>
+                    </label>
+                  </p>
+                </Fade>
+                <Fade up>
+                  <p>
+                    <Button {...button} title="SEND MESSAGE" />
+                  </p>
+                </Fade>
               </form>
-              <br/>
+              <br />
               <Box className="contactdes">
                 <Text
                   as="span"
