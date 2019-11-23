@@ -98,7 +98,7 @@ AboutSection.defaultProps = {
     content: "Our system is designed for the serious trader",
     fontSize: ["24px", "26px", "30px", "36px", "40px"],
     lineHeight: ["30px", "32px", "40px", "50px", "55px"],
-    fontWeight: "700",
+    // fontWeight: "700",
     color: "#32325d",
     letterSpacing: "-0.010em",
     mb: "20px",
@@ -110,7 +110,7 @@ AboutSection.defaultProps = {
     content:
       "Acquity seeks to enhance your trading experience by finding you matches every week.",
     fontSize: "16px",
-    fontWeight: "400",
+    // fontWeight: "400",
     color: "#525f7f",
     lineHeight: "28px",
     mb: ["30px", "30px", "40px", "40px", "55px"],
@@ -123,7 +123,7 @@ AboutSection.defaultProps = {
     textAlign: "left",
     fontSize: ["16px", "16px", "18px", "20px", "20px"],
     fontFamily: "'Nexa Bold','Poppins'",
-    fontWeight: "600",
+    // fontWeight: "600",
     lineHeight: "27px",
     color: "#525f7f",
     textAlign: ["left", "left"]
@@ -132,12 +132,12 @@ AboutSection.defaultProps = {
   btnStyle: {
     minWidth: "156px",
     fontSize: "14px",
-    fontWeight: "500"
+    // fontWeight: "500"
   },
   featureTitleStyle: {
     fontSize: ["18px", "18px", "20px", "20px", "20px"],
     lineHeight: ["25px", "27px", "27px", "27px", "27px"],
-    fontWeight: "500",
+    // fontWeight: "500",
     color: "#32325d",
     letterSpacing: "-0.010em",
     mb: "10px",
@@ -146,7 +146,7 @@ AboutSection.defaultProps = {
   // Transactions section description default style
   featureDescriptionStyle: {
     fontSize: "16px",
-    fontWeight: "400",
+    // fontWeight: "400",
     color: "#525f7f",
     lineHeight: "27px",
     textAlign: ["left", "left"]

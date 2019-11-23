@@ -122,14 +122,14 @@ ContactSection.defaultProps = {
     textAlign: "center",
     fontSize: `${2}`,
     letterSpacing: "0.15em",
-    fontWeight: `${6}`,
+    // fontWeight: `${6}`,
     color: "primary",
     mb: `${3}`
   },
   secHeading: {
     textAlign: "center",
     fontSize: [`${6}`, `${8}`],
-    fontWeight: "400",
+    // fontWeight: "400",
     color: "headingColor",
     letterSpacing: "-0.025em",
     mb: `${0}`
@@ -144,7 +144,7 @@ ContactSection.defaultProps = {
   button: {
     type: "submit",
     fontSize: `${2}`,
-    fontWeight: "600",
+    // fontWeight: "600",
     borderRadius: "4px",
     pl: "22px",
     pr: "22px",
@@ -153,7 +153,7 @@ ContactSection.defaultProps = {
   },
   note: {
     fontSize: "16px",
-    fontWeight: "400",
+    // fontWeight: "400",
     color: "#525f7f",
     lineHeight: "28px",
     mb: ["25px", "25px", "30px", "30px", "45px"],
@@ -161,7 +161,7 @@ ContactSection.defaultProps = {
   },
   colornote: {
     fontSize: "16px",
-    fontWeight: "500",
+    // fontWeight: "500",
     color: "rgb(106, 82, 253)",
     lineHeight: "28px",
     mb: ["25px", "25px", "30px", "30px", "45px"],
@@ -171,7 +171,7 @@ ContactSection.defaultProps = {
     content: "Contact Us",
     fontSize: ["24px", "26px", "30px", "36px", "40px"],
     lineHeight: ["30px", "32px", "40px", "50px", "55px"],
-    fontWeight: "700",
+    // fontWeight: "700",
     color: "#32325d",
     letterSpacing: "-0.010em",
     mb: "20px",
@@ -181,7 +181,7 @@ ContactSection.defaultProps = {
   description: {
     content: "Let us know if you have any queries!",
     fontSize: "16px",
-    fontWeight: "400",
+    // fontWeight: "400",
     color: "#525f7f",
     lineHeight: "28px",
     mb: ["25px", "25px", "30px", "30px", "45px"],

@@ -37,7 +37,7 @@ const RoundWrapper = styled.section`
     .btnSection {
       .readMore {
         font-size: 20px;
-        font-weight: 500;
+        // font-weight: 500;
         font-family: 'Nexa Bold', 'Poppins',;
         @media (max-width: 480px) {
           font-size: 16px;
@@ -48,7 +48,7 @@ const RoundWrapper = styled.section`
       margin-top: 30px;
       .readMore {
         font-size: 20px;
-        font-weight: 500;
+        // font-weight: 500;
         font-family: 'Nexa Bold', 'Poppins',;
         color: #32325d;
         @media (max-width: 480px) {
@@ -62,14 +62,14 @@ const RoundWrapper = styled.section`
           flex-direction: column;
           margin-right: 50px;
           font-size: 30px;
-          font-weight: 700;
+          // font-weight: 700;
           font-family: 'Nexa Bold', 'Poppins',;
           color: #32325d;
           justify-content: center;
           align-items: center;
           .countText {
             font-size: 16px;
-            font-weight: 400;
+            // font-weight: 400;
             font-family: 'Nexa Bold', 'Poppins',;
             color: #525f7f;
           }
@@ -111,7 +111,7 @@ const RoundWrapper = styled.section`
           box-shadow: -6.691px 7.431px 20px 0px rgba(38, 126, 208, 0.2);
         }
         > span {
-          font-weight: 700;
+          // font-weight: 700;
           letter-spacing: 1px;
         }
       }

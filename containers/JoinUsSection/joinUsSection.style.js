@@ -26,7 +26,7 @@ const JoinUsSectionWrapper = styled.section`
         box-shadow: -6.691px 7.431px 20px 0px rgba(38, 126, 208, 0.2);
       }
       > span {
-        font-weight: 700;
+        // font-weight: 700;
         letter-spacing: 1px;
       }
     }
