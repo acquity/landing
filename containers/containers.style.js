@@ -2,7 +2,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   body{
-    font-family: 'Nexa Light', 'Poppins', sans-serif;
+    font-family: 'Nexa Regular', 'Poppins', sans-serif;
   }
 
   h1,
@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Nexa Bold', 'Poppins', sans-serif;
   }
   p{
-    font-family: 'Nexa Light', 'Poppins',sans-serif;
+    font-family: 'Nexa Regular', 'Poppins',sans-serif;
   }
 
   section {
