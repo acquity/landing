@@ -203,24 +203,24 @@ export const menuWidget = [
       },
     ],
   },
+  // {
+  //   id: 2,
+  //   title: 'Our Information',
+  //   menuItems: [
+  //     {
+  //       id: 1,
+  //       url: '#',
+  //       text: 'Privacy Policy',
+  //     },
+  //     {
+  //       id: 2,
+  //       url: '#',
+  //       text: 'Terms & Conditions',
+  //     },
+  //   ],
+  // },
   {
     id: 2,
-    title: 'Our Information',
-    menuItems: [
-      {
-        id: 1,
-        url: '#',
-        text: 'Privacy Policy',
-      },
-      {
-        id: 2,
-        url: '#',
-        text: 'Terms & Conditions',
-      },
-    ],
-  },
-  {
-    id: 3,
     title: 'Get Started',
     menuItems: [
       {
