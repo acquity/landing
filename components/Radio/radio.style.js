@@ -8,7 +8,7 @@ const RadioBoxStyle = styled.div`
   .component__field-label {
     color: ${themeGet('colors.textColor', '#484848')};
     font-size: ${themeGet('fontSizes.4', '16')}px;
-    font-weight: ${themeGet('fontWeights.4', '500')};
+    // font-weight: ${themeGet('fontWeights.4', '500')};
   }
 
   /* Switch label style when labelPosition on left */

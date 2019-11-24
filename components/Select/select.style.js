@@ -6,7 +6,7 @@ const SelectStyle = styled.div`
   .component__field-label {
     color: ${themeGet('colors.labelColor', '#767676')};
     font-size: ${themeGet('fontSizes.4', '16')}px;
-    font-weight: ${themeGet('fontWeights.4', '500')};
+    // font-weight: ${themeGet('fontWeights.4', '500')};
   }
 
   /* Select label style when labelPosition on left */

@@ -72,7 +72,7 @@ const BannerWrapper = styled.section`
         }
         margin-top: 15px;
         .btn-text {
-          font-weight: 700;
+          // font-weight: 700;
           margin-top: 7px;
         }
         .btn-icon {
@@ -81,7 +81,7 @@ const BannerWrapper = styled.section`
         }
       }
       > a {
-        font-weight: 700;
+        // font-weight: 700;
         color: #fff;
       }
     }
@@ -97,7 +97,7 @@ const BannerWrapper = styled.section`
       .btn-text {
         padding-left: 15px;
         font-size: 15px;
-        font-weight: 500 !important;
+        // font-weight: 500 !important;
         font-family: 'Nexa Bold', 'Poppins', sans-serif;
       }
       &:hover {

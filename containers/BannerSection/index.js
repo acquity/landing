@@ -116,7 +116,7 @@ BannerSection.defaultProps = {
   },
   title: {
     fontSize: ["30px", "34px", "42px", "42px", "47px"],
-    fontWeight: "700",
+    // fontWeight: "700",
     color: "#fff",
     letterSpacing: "-0.025em",
     mb: ["20px", "25px"],
@@ -132,13 +132,13 @@ BannerSection.defaultProps = {
   btnStyle: {
     minWidth: ["120px", "156px"],
     fontSize: "15px",
-    fontWeight: "700",
+    // fontWeight: "700",
     borderRadius: "6px"
   },
   outlineBtnStyle: {
     minWidth: ["130px", "156px"],
     fontSize: "16px",
-    fontWeight: "700",
+    // fontWeight: "700",
     color: "#fff",
     p: "5px 10px"
   }

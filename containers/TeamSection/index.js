@@ -123,7 +123,7 @@ TeamSection.defaultProps = {
     content: "Meet our teams",
     fontSize: ["24px", "26px", "30px", "36px", "40px"],
     lineHeight: ["30px", "32px", "40px", "50px", "55px"],
-    fontWeight: "700",
+    // fontWeight: "700",
     color: "#32325d",
     letterSpacing: "-0.010em",
     mb: "20px",
@@ -135,7 +135,7 @@ TeamSection.defaultProps = {
     content:
       "For every company that uses our system, a team of current or former employees from that company will oversee the rounds and ensure that users onboard smoothly. They have no access to any information about the round, and they do this not for profit, but to improve everyone's experience and prevent any fraudulent activity.",
     fontSize: "16px",
-    fontWeight: "400",
+    // fontWeight: "400",
     color: "#525f7f",
     lineHeight: "28px",
     mb: ["25px", "25px", "30px", "30px", "45px"],
@@ -148,7 +148,7 @@ TeamSection.defaultProps = {
     textAlign: "left",
     fontSize: ["16px", "16px", "18px", "20px", "20px"],
     fontFamily: "'Nexa Bold','Poppins'",
-    fontWeight: "600",
+    // fontWeight: "600",
     lineHeight: "27px",
     color: "#525f7f",
     textAlign: ["left", "left"]
@@ -157,12 +157,12 @@ TeamSection.defaultProps = {
   btnStyle: {
     minWidth: "156px",
     fontSize: "14px",
-    fontWeight: "500"
+    // fontWeight: "500"
   },
   featureTitleStyle: {
     fontSize: ["18px", "18px", "20px", "20px", "20px"],
     lineHeight: ["1", "1", "1", "1", "1"],
-    fontWeight: "500",
+    // fontWeight: "500",
     color: "#32325d",
     letterSpacing: "-0.010em",
     mb: 0,
@@ -171,7 +171,7 @@ TeamSection.defaultProps = {
   // Scalable section description default style
   featureDescriptionStyle: {
     fontSize: "16px",
-    fontWeight: "400",
+    // fontWeight: "400",
     color: "#525f7f",
     lineHeight: "27px",
     textAlign: ["left", "left"],

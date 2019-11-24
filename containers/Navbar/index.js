@@ -106,7 +106,7 @@ Navbar.defaultProps = {
   button: {
     type: 'button',
     fontSize: '13px',
-    fontWeight: '700',
+    // fontWeight: '700',
     borderRadius: '4px',
     pl: '15px',
     pr: '15px',

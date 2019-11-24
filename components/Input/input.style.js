@@ -59,7 +59,7 @@ const InputField = styled.div`
     display: block;
     color: ${themeGet('colors.labelColor', '#767676')};
     font-size: ${themeGet('fontSizes.4', '16')}px;
-    font-weight: ${themeGet('fontWeights.4', '500')};
+    // font-weight: ${themeGet('fontWeights.4', '500')};
     margin-bottom: ${themeGet('space.3', '10')}px;
     transition: 0.2s ease all;
   }

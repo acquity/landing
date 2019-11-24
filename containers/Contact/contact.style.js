@@ -46,7 +46,7 @@ const SectionMainWrapper = styled.section`
         label {
           font-size: 14px;
           color: #343d48;
-          font-weight: 500;
+          // font-weight: 500;
           width: 100%;
           @media (max-width: 575px) {
             width: 100%;
@@ -71,9 +71,9 @@ const SectionMainWrapper = styled.section`
         input {
           width: 100%;
           background: #fff;
-          font-family: "Nexa Light", "Poppins", sans-serif;
+          font-family: "Nexa Regular", "Poppins", sans-serif;
           font-size: 16px;
-          font-weight: 500;
+          // font-weight: 500;
           color: #343d48;
           padding: 5px 15px;
           border-color: #dadada;
@@ -92,9 +92,9 @@ const SectionMainWrapper = styled.section`
         textarea {
           width: 100%;
           background: #fff;
-          font-family: "Nexa Light", "Poppins", sans-serif;
+          font-family: "Nexa Regular", "Poppins", sans-serif;
           font-size: 16px;
-          font-weight: 500;
+          // font-weight: 500;
           color: #343d48;
           padding: 5px 15px;
           border-color: #dadada;
@@ -134,7 +134,7 @@ const SectionMainWrapper = styled.section`
           box-shadow: -6.691px 7.431px 20px 0px rgba(38, 126, 208, 0.2);
         }
         > span {
-          font-weight: 700;
+          // font-weight: 700;
           letter-spacing: 1px;
         }
       }
